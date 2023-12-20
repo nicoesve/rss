@@ -1,0 +1,826 @@
+<rss version="2.0">
+<channel><item><title>2 Integration and Differentiation</title><num_pages>6</num_pages><link>/app/basics/rudin/chap6/2_Integration_and_Differentiation.pdf</link><description>118 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+24. The process described in part (c) of Exercise 22 can of course also be applied to 
+functions that map (O, oo) to (0, oo ). 
+Fix some oc &gt; 1, and put 
+1 oc f(x) = 2 X +-x' oc + X 
+g(x) = 1 + x&#183; 
+Both f and g have v; as their only fixed point in (O, oo ). Try to explain, on the 
+basis of properties off and g, why the convergence in Exercise 16, Chap. 3, is so 
+much more rapid than it is in Exercise 17. (Compare/' and g ', draw the zig-zags 
+suggested in Exercise 22.) 
+Do the same when O &lt; oc &lt; 1. 
+25. Suppose f is twice differentiable on [a, b], f(a) &lt; 0, f(b) &gt; 0, f'(x) ~ 8 &gt; 0, and 
+0 ~f''(x) ~ M for all x E [a, b]. Let g be the unique point in (a, b) at which 
+f(f) = 0. 
+Complete the details in the following outline of Newton's method for com&#173;
+puting f. 
+(a) Choose X1 E (f, b), and define {xn} by 
+f(xn) 
+Xn+l = Xn -f'(Xn) &#8226; 
+Interpret this geometrically, in terms of a tangent to the graph off. 
+(b) Prove that Xn+l &lt; Xn and that 
+lim Xn = g, 
+n-o oo 
+(c) Use Taylor's theorem to show that 
+f''(tn) 2 
+Xn+l -f = 2/'(Xn) (Xn -f) 
+for some tn E (f, Xn), 
+(d) If A= M/28, deduce that 
+0 ~ Xn+l -f ~ 1 [A(X1 -f)]2n. 
+(Compare with Exercises 16 and 18, Chap. 3.) 
+(e) Show that Newton's method amounts to finding a fixed point of the function 
+g defined by 
+f(x) 
+g(x) = x -f'(x) . 
+How does g '(x) behave for x near f? 
+(/) Put/(x) =x113 on (-oo, oo) and try Newton's method. What happens? DIFFERENTIATION 119 
+26. Suppose/ is differentiable on [a, b], f(a) = 0, and there is a real number A such 
+that lf'(x) I s A lf(x) I on [a, b]. Prove that f(x) = 0 for all x E [a, b]. Hint: Fix 
+Xo E [a, b], let 
+Mo= sup! f(x)I, M1 = sup IJ'(x) I 
+for as x s Xo. For any such x, 
+lf(x) I s M1(Xo -a) s A(xo -a)Mo. 
+Hence Mo = 0 if A(xo -a) &lt; 1. That is,/= 0 on [a, Xo], Proceed. 
+27. Let&lt;/&gt; be a real function defined on a rectangle R in the plane, given by as x s b, 
+ex sy &lt; {3. A solution of the initial-value problem 
+y' = cp(x, y), y(a) = c (ex s cs /3) 
+is, by definition, a differentiable function/ on [a, b] such that/(a) = c, ex s/(x) s /3, 
+and 
+f'(x) = cp(x, f(x)) (a&lt;xsb). 
+Prove that such a problem has at most one solution if there is a constant A such 
+that 
+I &lt;/&gt;(x, Y2) -cp(x, Y1) I s A I Y2 -Y1 I 
+whenever (x, Y1) ER and (x, Y2) E R. 
+Hint: Apply Exercise 26 to the difference of two solutions. Note that this 
+uniqueness theorem does not hold for the initial-value problem 
+y' = yl/2, y(O) = 0, 
+which has two solutions: f(x) = 0 and/(x) = x2/4. Find all other solutions. 
+28. Formulate and prove an analogous uniqueness theorem for systems of differential 
+equations of the form 
+Y.1 = &lt;/&gt;1(X, Y1, &#8226; &#8226; &#8226; , Yk), 
+Note that this can be rewritten in the form 
+y' = &lt;l&gt;(x, y), (j = 1, ... , k). 
+y(a) = C 
+where y = (Y1, ... , yk) ranges over a k-cell, &lt;I&gt; is the mapping of a (k + 1)-cell 
+into the Euclidean k-space whose components are the functions c/&gt;1, ... , &lt;pk, and c 
+is the vector (c1, ... , ck), Use Exercise 26, for vector-valued functions. 
+29. Specialize Exercise 28 by considering the system 
+' Y1=Y1+1 (j = 1, ... , k -1 ), 
+k 
+Y~ = f(x) -L 01(x)y1, 
+J=l 
+where/, 01, ... , Ok are continuous real functions on [a, b], and derive a uniqueness 
+theorem for solutions of the equation 
+y&lt;k&gt; + Ok(x)y&lt;k-t&gt; + &#183; &#183; &#183; + 02(x)y' + 01(x)y =f(x), 
+subject to initial conditions 
+y(a) = C1, y'(a) = C2, . . . ' THE RIEMANN-STIELTJES INTEGRAL 
+The present chapter is based on a definition of the Riemann integral which 
+depends very explicitly on the order structure of the real line. Accordingly, 
+we begin by discussing integration of real-valued functions on intervals. Ex&#173;
+tensions to complex- and vector-valued functions on intervals follow in later 
+sections. Integration over sets other than intervals is discussed in Chaps. 10 
+and 11. 
+DEFINITION AND EXISTENCE OF THE INTEGRAL 
+6.1 Definition Let [a, b] be a given interval. By a partition P of [a, b] we 
+mean a finite set of points x0, x1, &#8226;.&#8226; , Xn, where 
+We write 
+Ax,= x, -x,-1 (i=1, ... ,n). THE RIEMANN&#183;STIELTJES INTEGRAL 121 
+Now suppose f is a bounded real function defined on [a, b ]. Corresponding to 
+each partition P of [a, b] we put 
+and finally 
+(1) 
+(2) M1 = supf(x) 
+m, = inff(x) 
+n 
+U(P,f) = L M, Ax,' 
+i= 1 
+n 
+L(P,f) = L m1 dx1, 
+i= 1 
+-b (X,-1 S XS X1), 
+(Xi-1 S XS X1), 
+f dx = inf U(P,f), 
+a 
+b 
+f dx = sup L(P,f), 
+_a 
+where the inf and the sup are taken over all partitions P of [a, b]. The left 
+members of (1) and (2) are called the upper and lower Riemann integrals off 
+over [a, b], respectively. , 
+If the upper and lower integrals are equal, we say that f is Riemann&#173;
+integrable on [a, b], we write f E f!A (that, is, f!A denotes the set of Riemann&#173;
+integrable functions), and we denote the common value of (1) and (2) by 
+b 
+(3) fdx, 
+a 
+or by 
+b 
+(4) f(x) dx. 
+a 
+This is the Riemann integral off over [a, b]. Since f is bounded, there 
+exist two numbers, m and M, such that 
+msf(x)sM (as x s b). 
+Hence, for every P, 
+m(b -a) s L(P,f) s U(P,f) s M(b -a), 
+so that the numbers L(P,f) and U(P,f) form a bounded set. This shows that 
+the upper and lower integrals are defined for every bounded function f The 
+question of their equality, and hence the question of the integrability off, is a 
+more delicate one. Instead of investigating it separately for the Riemann integral, 
+we shall immediately consider a more general situation. 122 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+6.2 Definition Let ~ be a monotonically increasing function on [a, b] (since 
+~(a) and ~(b) are finite, it follows that~ is bounded on [a, b]). Corresponding to 
+each partition P of [a, b ], we write 
+Li~t = ~(X1) -~(X1-1), 
+It is clear that a~,~ 0. For any real function f which is bounded on [a, b] 
+we put 
+n 
+u(P,f, ~) = I M1 a~,, 
+I= 1 
+n 
+L(P,f, ~) = L m, a~i' 
+i= 1 
+where M1, m1 have the same meaning as in Definition 6.1, and we define 
+-b 
+(5) f d~ = inf U(P,f, ~), 
+a 
+b 
+(6) f d~ = sup L(P,f, ~), 
+_a 
+the inf and sup again being taken over all partitions. 
+If the left members of (5) and (6) are equal, we denote their common 
+value by 
+b 
+(7) fd~ 
+a 
+or sometimes by 
+(8) 
+a 
+This is the Riemann-Stieltjes integral ( or simply the Stieltjes integral) of 
+/with respect to~, over [a, b]. 
+If (7) exists, i.e., if (5) and (6) are equal, we say that f is integrable with 
+respect to ~, in the Riemann sense, and write f e Bl(~). 
+By taking ~(x) = x, the Riemann integral is seen to be a special case of 
+the Riemann-Stieltjes integral. Let us mention explicitly, however, that in the 
+general case ~ need not even be continuous. 
+A few words should be said about the notation. We prefer (7) to (8), since 
+the letter x which appears in (8) adds nothing to the content of (7). It is im&#173;
+material which letter we use to represent the so-called ''variable of integration." 
+For instance, (8) is the same as 
+a THE IUEMANN&#8226;STIELTJES INTEGRAL 123 
+The integral depends on f, ix, a and b, but not on the variable of integration, 
+which may as well be omitted. 
+The role played by the variable of integration is quite analogous to that 
+of the index of summation: The two symbols 
+mean the same thing~ since each means c1 + c2 + &#183; &#183; &#183; +en. 
+Of course, no harm is done by inserting the variable of integration, and 
+in many cases it is actually convenient to do so. 
+We shall now investigate the existence of the integral (7). Without saying 
+so every time,fwill be assumed real and bounded, and ix monotonically increas-
+ing on [a, b]; and, when there can be no misunderstanding, we shall write in 
+b 
+place of . 
+a 
+6.3 Definition We say that the partition P* is a refinenzent of P if P* =:, P 
+( that is, if every point of P is a point of P *). Given two partitions, P 1 and P 2 , 
+we say that P* is their common refinement if P* = P1 u P2. 
+6.4 Theorem If P* is a refinement of P, then 
+(9) 
+and 
+(10) L(P,f, ix)~ L(P*,f, ix) 
+U(P*,f, ix)~ U(P,f, ix). 
+Proof To prove (9), suppose first that P* contains just one point more 
+than P. Let this extra point be x&#8226;, and suppose xi-l &lt; x&#8226; &lt; x1, where 
+xi-l and x, are two consecutive points of P. Put 
+w1 = inff(x) 
+W2 = inff(x) (xi-i ~ x ~ x*), 
+(x&#8226; ~ x ~ x1). 
+Clearly w1 ~ mi and w2 ~ mi, where, as before, 
+mi= inff(x) 
+Hence 
+L(P*,f, ix) -L(P,f, ix) 
+= w1[ix(x*) -ix(xi_1)] + w2[oc(xi) -ix{x*)] -mi[ix(xi) -ix(x,_1)] 
+= (w1 -m1)[oc(x*) -ix(x,_1)] + (w2 -mi)[ix(x1) -ix(x*)] ~ 0. 
+If P&#8226; contains k points more than P, we repeat this reasoning k 
+times, and arrive at (9). The proof of (10) is analogous. </description></item><item><title>3 Integration of Vector-valued Functions</title><num_pages>3</num_pages><link>/app/basics/rudin/chap6/3_Integration_of_Vector-valued_Functions.pdf</link><description>THE IUEMANN&#8226;STIELTJES INTEGRAL 123 
+The integral depends on f, ix, a and b, but not on the variable of integration, 
+which may as well be omitted. 
+The role played by the variable of integration is quite analogous to that 
+of the index of summation: The two symbols 
+mean the same thing~ since each means c1 + c2 + &#183; &#183; &#183; +en. 
+Of course, no harm is done by inserting the variable of integration, and 
+in many cases it is actually convenient to do so. 
+We shall now investigate the existence of the integral (7). Without saying 
+so every time,fwill be assumed real and bounded, and ix monotonically increas-
+ing on [a, b]; and, when there can be no misunderstanding, we shall write in 
+b 
+place of . 
+a 
+6.3 Definition We say that the partition P* is a refinenzent of P if P* =:, P 
+( that is, if every point of P is a point of P *). Given two partitions, P 1 and P 2 , 
+we say that P* is their common refinement if P* = P1 u P2. 
+6.4 Theorem If P* is a refinement of P, then 
+(9) 
+and 
+(10) L(P,f, ix)~ L(P*,f, ix) 
+U(P*,f, ix)~ U(P,f, ix). 
+Proof To prove (9), suppose first that P* contains just one point more 
+than P. Let this extra point be x&#8226;, and suppose xi-l &lt; x&#8226; &lt; x1, where 
+xi-l and x, are two consecutive points of P. Put 
+w1 = inff(x) 
+W2 = inff(x) (xi-i ~ x ~ x*), 
+(x&#8226; ~ x ~ x1). 
+Clearly w1 ~ mi and w2 ~ mi, where, as before, 
+mi= inff(x) 
+Hence 
+L(P*,f, ix) -L(P,f, ix) 
+= w1[ix(x*) -ix(xi_1)] + w2[oc(xi) -ix{x*)] -mi[ix(xi) -ix(x,_1)] 
+= (w1 -m1)[oc(x*) -ix(x,_1)] + (w2 -mi)[ix(x1) -ix(x*)] ~ 0. 
+If P&#8226; contains k points more than P, we repeat this reasoning k 
+times, and arrive at (9). The proof of (10) is analogous. 124 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+b -b 
+6.S Theorem f da. ~ f da.. 
+(11) 
+(12) _a a 
+Proof Let P* be the common refinement of two partitions P 1 and P 2 &#8226; 
+By Theorem 6.4, 
+L(P1,f, a.)~ L(P*,f. a.)~ U(P*,f, a.)~ U(P2 ,f, a.). 
+Hence 
+If P2 is fixed and the sup is taken over all P1, (11) gives 
+f da. ~ U(P2 ,f, a.). 
+-
+The theorem follows by taking the inf over all P2 in (12). 
+6.6 Theorem f e af(a.) on [a, b] if and only if for every 8 &gt; 0 there exists a 
+partition P such that 
+(13) 
+(14) 
+(15) U(P,f, a.) -L(P,f, a.) &lt; 8. 
+Proof For every P we have 
+-
+L(P,f, a.)~ f da. ~ f da. ~ U(P,f, a.). -
+Thus (13) implies 
+-
+0 ~ f da. -f da. &lt; 8. -
+Hence, if (13) can be satisfied for every 8 &gt; 0, we have 
+-
+f da. = f da., -
+that is, f e af(a.). 
+Conversely, suppose f e af(a.), and let e &gt; 0 be given. Then there 
+exist partitions P1 and P2 such that THE RIEMANN&#183;STIELTJES INTEGRAL 12S 
+We choose P to be the common refinement of P1 and P2&#8226; Then Theorem 
+6.4, together with (14) and (15), shows that 
+B U(P,f, oc) ~ U(P2 ,f, oc) &lt; f doc + 2 &lt; L(P1,f, oc) + e ~ L(P,f, oc) + e, 
+so that (13) holds for this partition P. 
+Theorem 6.6 furnishes a convenient criterion for integrability. Before we 
+apply it, we state some closely related facts. 
+6.7 Theorem 
+(a) I/(13) holds for some P and some e, then (13) holds (with the same e) 
+for every refinement of P. 
+(b) If (13) holds for P = {x0, &#8226;&#8226;&#8226; , xn} and if si, ti are arbitrary points in 
+[xi-i, xi], then 
+n 
+L lf(si)-f(ti)I Lioci&lt;e. 
+i= 1 
+(c) If fe al(oc) and the hypotheses of(b) hold, then 
+n b 
+L f(t i) Lioci -f doc &lt; e. 
+i= 1 a 
+Proof Theorem 6.4 implies (a). Under the assumptions made in (b), 
+both/(si) andf(ti) lie in [mi, Mi], so that f(si) -f(t,)I ~ M, -mi. Thus 
+n I lf(s,) -f(t ,) I Lioci ~ U(P,f, oc) -L(P,f, oc), 
+i= 1 
+which proves (b). The obvious inequalities 
+L(P,f, oc) ~ Lf(ti) Lioci ~ U(P,f,oc) 
+and 
+L(P,f, oc) ~ J f doc~ U(P,f, oc) 
+prove (c). 
+6.8 Theorem If f is continuous on [a, b] thenfe al(oc) on [a, b]. 
+(16) Proof Let e &gt; 0 be given. Choose 17 &gt; 0 so that 
+[oc(b) -oc(a)]17 &lt; e. 
+Since f is uniformly continuous on [a, b] (Theorem 4.19), there exists a 
+J &gt; 0 such that 
+lf(x) -f(t)I &lt; 11 </description></item><item><title>0 Definition and Existence of the Integral</title><num_pages>1</num_pages><link>/app/basics/rudin/chap6/0_Definition_and_Existence_of_the_Integral.pdf</link><description>110 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+(20) 
+(21) 
+(22) Next, suppose (15) holds. Keeping y fixed in (18), we can choose 
+a point c1 e (a, y) such that g(x) &gt; g(y) and g(x) &gt; 0 if a&lt; x &lt; c1. Multi&#173;
+plying (18) by [g(x) -g(y)]/g(x), we obtain 
+f(x) &lt; r _ rg(y) +f(y) ( ) a&lt; X &lt; C1 . g(x) g(x) g(x) 
+If we let x &gt; a in (20), (15) shows that there is a point c2 e (a, c1) 
+such that 
+f(x) 
+g(x) &lt; q 
+Summing up, (19) and (21) show that for any q, subject only to the 
+condition A &lt; q, there is a point c2 such thatf(x)/g(x) &lt; q if a&lt; x &lt; c2. 
+In the same manner, if -oo &lt; A ~ + oo, and p is chosen so that 
+p &lt; A, we can find a point c3 such that 
+f(x) 
+p &lt; -(a &lt; X &lt; C3), g(x) 
+and (16) follows from these two statements. 
+DERIVATIVES OF HIGHER ORDER 
+5.14 Definition If/has a derivative/' on an interval, and if/' is itself differen&#173;
+tiable, we denote the derivative off' by f '' and call/'' the second derivative off 
+Continuing in this manner, we obtain functions 
+f,f',f'',/(3&gt;, &#183; &#183; &#183; ,f(n), 
+each of which is the derivative of the preceding one. J&lt;n&gt; is called the nth deriva&#173;
+tive, or the derivative of order n, off 
+In order for J&lt;n&gt; (x) to exist at a point x,f&lt;n-l) (t) must exist in a neighbor&#173;
+hood of x ( or in a one-sided neighborhood, if x is an endpoint of the interval 
+on which f is defined), and J&lt;n -i &gt; must be differentiable at x. Since J&lt;n-i &gt; must 
+exist in a neighborhood of x,J&lt;n-2&gt; must be differentiable in that neighborhood. 
+TAYLOR'S THEOREM 
+-5.15 Theorem Suppose f is a real function on [a, b ], n is a positive integer, 
+J&lt;n-l) is continuous on [a, b],f&lt;n&gt;(t) exists for every t e (a, b). Let tx, P be distinct 
+points of [a, b ], and define 
+n-1/(k)(tx) 
+(23) P(t) = L --(t -tx)k. 
+k=O k! </description></item><item><title>1 Properties of the Integral</title><num_pages>9</num_pages><link>/app/basics/rudin/chap6/1_Properties_of_the_Integral.pdf</link><description>110 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+(20) 
+(21) 
+(22) Next, suppose (15) holds. Keeping y fixed in (18), we can choose 
+a point c1 e (a, y) such that g(x) &gt; g(y) and g(x) &gt; 0 if a&lt; x &lt; c1. Multi&#173;
+plying (18) by [g(x) -g(y)]/g(x), we obtain 
+f(x) &lt; r _ rg(y) +f(y) ( ) a&lt; X &lt; C1 . g(x) g(x) g(x) 
+If we let x &gt; a in (20), (15) shows that there is a point c2 e (a, c1) 
+such that 
+f(x) 
+g(x) &lt; q 
+Summing up, (19) and (21) show that for any q, subject only to the 
+condition A &lt; q, there is a point c2 such thatf(x)/g(x) &lt; q if a&lt; x &lt; c2. 
+In the same manner, if -oo &lt; A ~ + oo, and p is chosen so that 
+p &lt; A, we can find a point c3 such that 
+f(x) 
+p &lt; -(a &lt; X &lt; C3), g(x) 
+and (16) follows from these two statements. 
+DERIVATIVES OF HIGHER ORDER 
+5.14 Definition If/has a derivative/' on an interval, and if/' is itself differen&#173;
+tiable, we denote the derivative off' by f '' and call/'' the second derivative off 
+Continuing in this manner, we obtain functions 
+f,f',f'',/(3&gt;, &#183; &#183; &#183; ,f(n), 
+each of which is the derivative of the preceding one. J&lt;n&gt; is called the nth deriva&#173;
+tive, or the derivative of order n, off 
+In order for J&lt;n&gt; (x) to exist at a point x,f&lt;n-l) (t) must exist in a neighbor&#173;
+hood of x ( or in a one-sided neighborhood, if x is an endpoint of the interval 
+on which f is defined), and J&lt;n -i &gt; must be differentiable at x. Since J&lt;n-i &gt; must 
+exist in a neighborhood of x,J&lt;n-2&gt; must be differentiable in that neighborhood. 
+TAYLOR'S THEOREM 
+-5.15 Theorem Suppose f is a real function on [a, b ], n is a positive integer, 
+J&lt;n-l) is continuous on [a, b],f&lt;n&gt;(t) exists for every t e (a, b). Let tx, P be distinct 
+points of [a, b ], and define 
+n-1/(k)(tx) 
+(23) P(t) = L --(t -tx)k. 
+k=O k! DIFFERENTIATION 111 
+Then there exists a point x between IX and /3 such that 
+(24) n. 
+For n = 1, this is just the mean value theorem. In general, the theorem 
+shows that f can be approximated by a polynomial of degree n -1, and that 
+(24) allows us to estimate the error, if we know bounds on lf&lt;n&gt;(x) I&#8226; 
+(25) 
+(26) 
+(27) Proof Let M be the number defined by 
+f(/3) = P(/3) + M(/3 -1X)n 
+and put 
+g(t) =f(t) -P(t) -M(t -1X)n (a~ t ~ b). 
+We have to show that n !M = f&lt;n&gt;(x) for some x between IX and /3. By 
+(23) and (26), 
+(a&lt; t &lt; b). 
+Hence the proof will be complete if we can show that g&lt;n&gt;(x) = 0 for some 
+x between IX and f3. 
+Since p&lt;k&gt;(IX) = [&lt;k&gt;(IX) fork= 0, ... , n -1, we have 
+(28) g(IX) = g'(IX) = ''' = g&lt;n-l)(IX) = 0. 
+Our choice of M shows that g(/3) = 0, so that g'(x1) = 0 for some x1 
+between IX and /3, by the mean value theorem. Since g1(1X) = 0, we conclude 
+similarly that g''(x2) = 0 for some x2 between IX and x1. After n steps we 
+arrive at the conclusion that g&lt;n&gt;(xn) = 0 for some Xn bet ween IX and Xn _ 1, 
+that is, between IX and /3. 
+DIFFERENTIATION OF VECTOR-VALUED FUNCTIONS 
+5.16 Remarks Definition 5.1 applies without any change to complex functions 
+f defined on [a, b], and Theorems 5.2 and 5.3, as well as their proofs, remain 
+valid. If /1 and/2 are the real and imaginary parts of I, that is, if 
+f(t) = li(t) + if2(t) 
+for a~ t ~ b, where/ 1(t) and/2(t) are real, then we clearly have 
+(29) f'(x) = f{(x) + ifi(x); 
+also, f is differentiable at x if and only if both /1 and /2 are differentiable at x. 112 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+Passing to vector-valued functions in general, i.e., to functions f which 
+map [a, b] into some Rk, we may still apply Definition 5.1 to define f'(x). The 
+term &lt;p(t) in (1) is now, for each t, a point in Rk, and the limit in (2) is taken with 
+respect to the norm of Rk. In other words, f'(x) is that point of Rk (if there is 
+one) for which 
+(30) lim f(t) -f(x) -f'(x) = 0, 
+t&#10132;x t -X 
+and f' is again a function with values in Rk. 
+If /1, &#8226;.. , fk are the components off, as defined in Theorem 4.10, then 
+(31) f' = (/{, ... ,/;), 
+and f is differentiable at a point x if and only if each of the functions /1, &#8226;&#8226;&#8226; , h 
+is differentiable at x. 
+Theorem 5.2 is true in this context as well, and so is Theorem 5.3(a) and 
+{b), if Jg is replaced by the inner product f &#183; g (see Definition 4.3). 
+When we turn to the mean value theorem, however, and to one of its 
+consequences, namely, L'Hospital's rule, the situation changes. The next two 
+examples will show that each of these. results fails to be true for complex-valued 
+functions. 
+5.17 Example Define, for real x, 
+(32) f(x) = eix = cos x + i sin x. 
+{The last expression may be taken as the definition of the complex exponential 
+eix; see Chap. 8 for a full discussion of these functions.) Then 
+(33) 
+but 
+(34) f(2n) -/(0) = 1 - 1 = 0, 
+f'(x) = ieix, 
+so that 1/'(x) I = 1 for all real x. 
+Thus Theorem 5.10 fails to hold in this case. 
+5.18 Example On the segment (0, 1), define/(x) = x and 
+(35) g(x) = x + x2eilx2
+&#8226; 
+Since I eit I = 1 for all real t, we see that 
+(36) lim f(x) = 1. 
+x&#10132;O g(x) Next, 
+(37) 
+so that 
+(38) 
+Hence 
+(39) 
+and so 
+(40) g'(x) = 1 + 2 2i i/x2 x--e 
+X (0 &lt; X &lt; 1), 
+lu'(x) I ~ 2i 2x-&#173;x 2 -1~--1. 
+X 
+/'(x) 1 X =--~--g'(x) lu'(x) I 2 -x 
+lim f'(x) = 0. 
+x&#10132;o g'(x) DIFFERENTIATION 113 
+By (36) and ( 40), L'Hospital's rule fails in this case. Note also that g'(x) &#165;: 0 
+on (0, 1 ), by (38). 
+However, there is a consequence of the mean value theorem which, for 
+purposes of applications, is almost as useful as Theorem 5.10, and which re&#173;
+mains true for vector-valued functions: From Theorem 5.10 it follows that 
+(41) IJ(b) -f(a) I ~ (b -a) sup 1/'(x) 1-
+a&lt;x&lt;b 
+5.19 Theorem Suppose f is a continuous mapping of [a, b] into Rk and f is 
+differentiable in (a, b). Then there exists x E (a, b) such that 
+jf(b) -f(a)I ~ (b -a)lf'(x)I. 
+Proof1 Putz = f(b) -f(a), and define 
+&lt;p( t ) = z &#8226; f( t) ( a ~ t ~ b). 
+Then &lt;p is a real-valued continuous function on [a, b] which is differentia&#173;
+ble in (a, b). The mean value theorem shows therefore that 
+&lt;p(b) -&lt;p(a) = (b -a)&lt;p'(x) = (b &#183;-a)z &#183; f'(x) 
+for some x E (a, b). On the other hand, 
+&lt;p( b) -&lt;p( a) = z &#183; f( b) -z &#183; f( a) = z &#183; z = I z I 2&#8226; 
+The Schwarz inequality now gives 
+I z I 2 = ( b -a) I z &#183; f' ( x) I ~ ( b -a) I z I I f' ( x) I . 
+Hence lzl ~ (b -a)lf'(x)I, which is the desired conclusion. 
+1 V. P. Havin translated the second edition of this book into Russian and added this 
+proof to the original one. 114 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+EXERCISES 
+1. Let/ be defined for all real x, and suppose that 
+lf(x) -f(y) I ~ (x -Y)2 
+for all real x and y. Prove that/ is constant. 
+2. Suppose/'(x) &gt; 0 in (a, b). Prove that/is strictly increasing in (a, b), and let g be 
+its inverse function. Prove that g is differentiable, and that 
+(a&lt; x &lt; b). 
+3. Suppose g is a real function on R1, with bounded derivative (say I g' I ~ M). Fix 
+e &gt; 0, and define/(x) = x + eg(x). Prove that/is one-to-one if e is small enough. 
+(A set of admissible values of e can be determined which depends only on M.) 
+4. If 
+Co+ C1 +&#183;&#183;&#183;+ Cn-1 + Cn =0, 
+2 n n+l 
+where Co, ... , Cn are real constants, prove that the equation 
+Co+ Cix + &#183; &#183; &#183; + Cn-ixn-i + Cnxn = 0 
+has at least one real root between O and 1. 
+5. Suppose/is defined and differentiable for every x &gt; 0, and/'(x) &#9658; 0 as x &#9658; + oo. 
+Put g(x) =f(x + 1)-/(x). Prove that g(x) &#9658; 0 as x &#9658; + oo. 
+6. Suppose 
+(a) f is continuous for x ~ 0, 
+(b) f'(x) exists for x &gt; 0, 
+(c) /'(O) = 0, 
+(d) f' is monotonically increasing. 
+Put 
+g(x) =f(x) 
+X 
+and prove that g is monotonically increasing. (x &gt;0) 
+7. Suppose /'(x), g'(x) exist, g '(x) -=I= 0, and /(x) = g(x) = 0. Prove that 
+lim /(t) =/'(x). 
+r&#10132;x g(t) g'(x) 
+{This holds also for complex functions.) 
+8. Suppose/' is continuous on [a, b] and e &gt; 0. Prove that there exists 8 &gt; 0 such 
+that 
+f(t) -f(x) _ f'(x) &lt; 8 t-x DIFFERENTJA TION 115 
+whenever O &lt; It -x I &lt; 8, a :::;: x :::;: b, a :::;: t :::;: b. (This could be expressed by 
+saying that/is uniformly differentiable on [a, b] if/' is continuous on [a, b].) Does 
+this hold for vector-valued functions too? 
+9. Let f be a continuous real function on R1, of which it is known that f'(x) exists 
+for all x -=I= 0 and that f'(x) &#9658; 3 as x &#9658; 0. Does it follow that /'(O) exists? 
+10. Suppose/ and g are complex differentiable functio son (0, 1),/(x) &#9658; 0, g(x) &#9658; 0, 
+f'(x) &#9658; A, g'(x) &#183; &#9658; Bas x &#9658; 0, where A and Bare c mplex numbers, B -=I= 0. Prove 
+that 
+lim/(x) = ~&#173;
+x&#10132;o g(x) B 
+Compare with Example S.18. Hint: 
+f(x) = f(x) _ A 
+g(x) X &#8226; X +A&#183; X. 
+g(x) g(x) 
+Apply Theorem S.13 to the real and imaginary parts of f(x)/x and g(x)/x. 
+11. Suppose/is defined in a neighborhood of x, and suppose/''(x) exists. Show that 
+l. f(x + h) + f(x -h) -2/(x) = f''( ) 1m h2 x . 
+11&#10132;0 
+Show by an example that the limit may exist even if fn(x) does not. 
+Hint: Use Theorem S.13. 
+12. If f(x) =Ix I 3, compute f'(x), fn(x) for all real x, and show that /&lt;3&gt;(0) does not 
+exist. 
+13. Suppose a and c are real numbers, c &gt; 0, and f is defined on [ -1, 1] by 
+x&#8226; sin (lxl-c) 
+f(x) = 
+0 
+Prove the following statements: 
+(a) f is continuous if and only if a &gt; 0. 
+(b) /'(O) exists if and only if a&gt; 1. 
+(c) f' is bounded if and only if a~ 1 + c. 
+(d) f' is continuous if and only if a&gt; 1 + c. 
+(e) fn(O) exists if and only if a&gt; 2 + c. 
+(/) fn is bounded if and only if a ~ 2 + 2c. 
+(g) f n is continuous if and only if a &gt; 2 + 2c. (if X -=/= 0), 
+(if X = 0). 
+14. Let f be a differentiable real function defined in (a, b). Prove that f is convex if 
+and only if /' is monotonically increasing. Assume next that f''(x) exists for 
+every x e (a, b), and prove that/is convex if and only if /''(x) ~ 0 for all x e (a, b). 
+15. Suppose a e R1, /is a twice-differentiable real function on (a, oo ), and Mo, Mi, M2 
+are the least upper bounds of 1/(x} I, l/'(x) I, lf''(x) I, respectively, on (a, oo ). 
+Prove that 
+Mf:::;: 4Mo M2. 116 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+Hint: If h &gt; 0, Taylor's theorem shows that 
+f'(x) = ;h [f(x + 2h) -/(x)] -h/''(f) 
+for some f e (x, x + 2h). Hence 
+1/'(x) I s hM2 + :0 
+&#8226; 
+To show that Mf = 4MoM2 can actually happen, take a= -1, define 
+2x2 -1 
+f(x) = x2 -1 
+x2 + 1 (-1 &lt; X &lt; 0), 
+(0 S X &lt; oo), 
+and show that Mo= 1, M1 = 4, M2 = 4. 
+Does Mf s 4M o M 2 hold for vector-valued functions too? 
+16. Suppose f is twice-differentiable on (0, oo ), /'' is bounded on (O, oo ), and /(x) &gt; O 
+as x &#9658; oo. Prove that f'(x) &#9658; 0 as x &#9658; oo. 
+Hint: Let a &#9658; oo in Exercise 15. 
+17. Suppose f is a real, three times differentiable function on [-1, l], such that 
+/(-1) =0, /(0) =0, /(1) = 1, /'(O) = 0. 
+Prove that/&lt;3&gt;(x) ~ 3 for some x e (-1, 1). 
+Note that equality holds for !(x3 + x2). 
+Hint: Use Theorem 5.15, with oc = 0 and /3 = &#177; 1, to show that there exist 
+s e (0, 1) and t e (-1, 0) such that 
+/&lt;3&gt;(s) + /&lt;3&gt;(t) = 6. 
+18. Suppose f is a real function on [a, b], n is a positive integer, and /&lt;n-1&gt; exists for 
+every t e [a, b]. Let oc, /3, and P be as in Taylor's theorem (5.15). Define 
+Q(t) = f(t)-f(/3) 
+t-/3 
+for t e [a, b ], t -=I= {3, differentiate 
+f(t) -f(/3) = (t -/3)Q(t) 
+n -1 times at t = oc, and derive the following version of Taylor's theorem: 
+Q&lt;n-t&gt;(oc) 
+f(/3) = P(/3) + (n -1) ! (/3 -oc)n, 
+19. Suppose I is defined in (-1, 1) and /'(0) exists. Suppose -1 &lt; &#176;'n &lt; /3n &lt; 1, 
+ocn &#9658; 0, and /3n &#9658; 0 as n &#183; &#9658; oo. Define the difference quotients DIFFERENTIATION 117 
+Prove the following statements: 
+(a) If 1Xn &lt; 0 &lt; fJn, then lim Dn = f'(O). 
+(b) If O &lt; 1Xn &lt; f3n and {{Jn/(fJn -1Xn)} is bounded, then lim Dn = f'(O). 
+(c) If/' is continuous in (-1, 1), then lim Dn = f'(O). 
+Give an example in which/is differentiable in (-1, 1) (but/' is not contin&#173;
+uous at 0) and in which IXn , fJn tend to O in such a way that lim Dn exists but is differ&#173;
+ent from /'(0). 
+20. Formulate and prove an inequality which follows from Taylor's theorem and 
+which remains valid for vector-valued functions. 
+21. Let E be a closed subset of Ri. We saw in Exercise 22, Chap. 4, that there is a 
+real continuous function/ on Ri whose zero set is E. Is it possible, for each closed 
+set E, to find such an / which is differentiable on Ri, or one which is n times 
+differentiable, or even one which has derivatives of all orders on Ri? 
+22. Suppose f is a real function on ( -oo, oo ). Call x a fixed point off if f(x) = x. 
+(a) If /is differentiable and/'(t) cf=. 1 for every real t, prove that/has at most one 
+fixed point. 
+(b) Show that the function/ defined by 
+J(t) = t + (1 + er)-i 
+has no fixed point, although O &lt;/'(t) &lt; 1 for all real t. 
+(c) However, if there is a constant A &lt; 1 such that 1/'(t) I ~ A for all real t, prove 
+that a fixed point x of/ exists, and that x = lim Xn, where Xi is an arbitrary real 
+number and 
+Xn+1 =f(Xn) 
+for n = 1, 2, 3, .... 
+(d) Show that the process described in (c) can be visualized by the zig-zag path 
+23. The function f defined by 
+f(x) = x3 + 1 
+3 
+has three fixed points, say IX, {J, y, where 
+-2&lt;1X&lt;-l ' 0 &lt; fJ &lt; 1, 1 &lt; y &lt; 2. 
+For arbitrarily chosen Xi, define {xn} by setting Xn + i = f(xn), 
+(a) If Xi &lt; IX, prove that Xn &#9658; -oo as n &#9658; oo. 
+(b) If IX&lt; Xi&lt; y, prove that Xn &#9658; fJ as n &#9658; oo. 
+(c) If y &lt; Xi, prove that Xn &#9658; + oo as n &#9658; oo. 
+Thus fJ can be located by this method, but IX and y cannot. 118 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+24. The process described in part (c) of Exercise 22 can of course also be applied to 
+functions that map (O, oo) to (0, oo ). 
+Fix some oc &gt; 1, and put 
+1 oc f(x) = 2 X +-x' oc + X 
+g(x) = 1 + x&#183; 
+Both f and g have v; as their only fixed point in (O, oo ). Try to explain, on the 
+basis of properties off and g, why the convergence in Exercise 16, Chap. 3, is so 
+much more rapid than it is in Exercise 17. (Compare/' and g ', draw the zig-zags 
+suggested in Exercise 22.) 
+Do the same when O &lt; oc &lt; 1. 
+25. Suppose f is twice differentiable on [a, b], f(a) &lt; 0, f(b) &gt; 0, f'(x) ~ 8 &gt; 0, and 
+0 ~f''(x) ~ M for all x E [a, b]. Let g be the unique point in (a, b) at which 
+f(f) = 0. 
+Complete the details in the following outline of Newton's method for com&#173;
+puting f. 
+(a) Choose X1 E (f, b), and define {xn} by 
+f(xn) 
+Xn+l = Xn -f'(Xn) &#8226; 
+Interpret this geometrically, in terms of a tangent to the graph off. 
+(b) Prove that Xn+l &lt; Xn and that 
+lim Xn = g, 
+n-o oo 
+(c) Use Taylor's theorem to show that 
+f''(tn) 2 
+Xn+l -f = 2/'(Xn) (Xn -f) 
+for some tn E (f, Xn), 
+(d) If A= M/28, deduce that 
+0 ~ Xn+l -f ~ 1 [A(X1 -f)]2n. 
+(Compare with Exercises 16 and 18, Chap. 3.) 
+(e) Show that Newton's method amounts to finding a fixed point of the function 
+g defined by 
+f(x) 
+g(x) = x -f'(x) . 
+How does g '(x) behave for x near f? 
+(/) Put/(x) =x113 on (-oo, oo) and try Newton's method. What happens? </description></item><item><title>4 Rectifiable Curves</title><num_pages>2</num_pages><link>/app/basics/rudin/chap6/4_Rectifiable_Curves.pdf</link><description>THE RIEMANN&#183;STIELTJES INTEGRAL 12S 
+We choose P to be the common refinement of P1 and P2&#8226; Then Theorem 
+6.4, together with (14) and (15), shows that 
+B U(P,f, oc) ~ U(P2 ,f, oc) &lt; f doc + 2 &lt; L(P1,f, oc) + e ~ L(P,f, oc) + e, 
+so that (13) holds for this partition P. 
+Theorem 6.6 furnishes a convenient criterion for integrability. Before we 
+apply it, we state some closely related facts. 
+6.7 Theorem 
+(a) I/(13) holds for some P and some e, then (13) holds (with the same e) 
+for every refinement of P. 
+(b) If (13) holds for P = {x0, &#8226;&#8226;&#8226; , xn} and if si, ti are arbitrary points in 
+[xi-i, xi], then 
+n 
+L lf(si)-f(ti)I Lioci&lt;e. 
+i= 1 
+(c) If fe al(oc) and the hypotheses of(b) hold, then 
+n b 
+L f(t i) Lioci -f doc &lt; e. 
+i= 1 a 
+Proof Theorem 6.4 implies (a). Under the assumptions made in (b), 
+both/(si) andf(ti) lie in [mi, Mi], so that f(si) -f(t,)I ~ M, -mi. Thus 
+n I lf(s,) -f(t ,) I Lioci ~ U(P,f, oc) -L(P,f, oc), 
+i= 1 
+which proves (b). The obvious inequalities 
+L(P,f, oc) ~ Lf(ti) Lioci ~ U(P,f,oc) 
+and 
+L(P,f, oc) ~ J f doc~ U(P,f, oc) 
+prove (c). 
+6.8 Theorem If f is continuous on [a, b] thenfe al(oc) on [a, b]. 
+(16) Proof Let e &gt; 0 be given. Choose 17 &gt; 0 so that 
+[oc(b) -oc(a)]17 &lt; e. 
+Since f is uniformly continuous on [a, b] (Theorem 4.19), there exists a 
+J &gt; 0 such that 
+lf(x) -f(t)I &lt; 11 126 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+ifxe[a,b], te[a,b],and Ix-ti &lt;b. 
+If P is any partition of [a, b] such that Axi &lt; b for all i, then {16) 
+implies that 
+(17) (i-1, ... ,n) 
+and the ref ore 
+n 
+U(P,f, oc) -L(P,f, oc) = L (Mi -mi) ll.oc, 
+i= 1 
+n 
+~ 'IL ll.oci = 17[oc(b) -oc(a)] &lt; e. 
+i= 1 
+By Theorem 6.6, f e rJt(oc). 
+6.9 Theorem If f is monotonic on [a, b ], and if oc is continuous on [a, b ], then 
+f e fJt(oc). (We still assume, of course, that oc is monotonic.) 
+Proof Let e &gt; 0 be given. For any positive integer n, choose a partition 
+such that 
+ll.oci = oc(b) -oc(a) 
+n (i = 1, ... , n). 
+This is possible since oc is continuous {Theorem 4.23). 
+We suppose that/is monotonically increasing (the proof is analogous 
+in the other case). Then 
+(i = 1, ... , n), 
+so that 
+oc(b) -oc(a) n U(P,f, oc) -L(P,f, oc) = ---L [f(x,) -f(xi-1)] n i= 1 
+= oc(b) -oc(a). [f(b) -/(a)] &lt; e 
+n 
+if n is taken large enough. By Theorem 6.6,f e fJt(oc). 
+6.10 Theorem Suppose f is bounded on [a, b], f has only finitely many points 
+of discontinuity on [a, b ], and oc is continuous at every point at which f is discon&#173;
+tinuous. Then f e rJt(oc). 
+Proof Let e &gt; 0 be given. Put M = sup ]/(x) J , let E be the set of points 
+at which f is discontinuous. Since E is finite and oc is continuous at every 
+point of E, we can cover E by finitely many disjoint intervals [u1, v1] c 
+[a, b] such that the sum of the corresponding differences oc(v1) -oc(u1) is 
+less than e. Furthermore, we can place these intervals in such a way that 
+every point of E ri (a, b) lies in the interior of some [u1, v1]. </description></item><item><title>5 Exercises</title><num_pages>3</num_pages><link>/app/basics/rudin/chap6/5_Exercises.pdf</link><description>126 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+ifxe[a,b], te[a,b],and Ix-ti &lt;b. 
+If P is any partition of [a, b] such that Axi &lt; b for all i, then {16) 
+implies that 
+(17) (i-1, ... ,n) 
+and the ref ore 
+n 
+U(P,f, oc) -L(P,f, oc) = L (Mi -mi) ll.oc, 
+i= 1 
+n 
+~ 'IL ll.oci = 17[oc(b) -oc(a)] &lt; e. 
+i= 1 
+By Theorem 6.6, f e rJt(oc). 
+6.9 Theorem If f is monotonic on [a, b ], and if oc is continuous on [a, b ], then 
+f e fJt(oc). (We still assume, of course, that oc is monotonic.) 
+Proof Let e &gt; 0 be given. For any positive integer n, choose a partition 
+such that 
+ll.oci = oc(b) -oc(a) 
+n (i = 1, ... , n). 
+This is possible since oc is continuous {Theorem 4.23). 
+We suppose that/is monotonically increasing (the proof is analogous 
+in the other case). Then 
+(i = 1, ... , n), 
+so that 
+oc(b) -oc(a) n U(P,f, oc) -L(P,f, oc) = ---L [f(x,) -f(xi-1)] n i= 1 
+= oc(b) -oc(a). [f(b) -/(a)] &lt; e 
+n 
+if n is taken large enough. By Theorem 6.6,f e fJt(oc). 
+6.10 Theorem Suppose f is bounded on [a, b], f has only finitely many points 
+of discontinuity on [a, b ], and oc is continuous at every point at which f is discon&#173;
+tinuous. Then f e rJt(oc). 
+Proof Let e &gt; 0 be given. Put M = sup ]/(x) J , let E be the set of points 
+at which f is discontinuous. Since E is finite and oc is continuous at every 
+point of E, we can cover E by finitely many disjoint intervals [u1, v1] c 
+[a, b] such that the sum of the corresponding differences oc(v1) -oc(u1) is 
+less than e. Furthermore, we can place these intervals in such a way that 
+every point of E ri (a, b) lies in the interior of some [u1, v1]. THE RIEMANN&#183;STIELTJES INTEGRAL 127 
+Remove the segments (ui, vi) from [a, b]. The remaining set K is 
+compact. Hence f is uniformly continuous on K, and there exists ~ &gt; 0 
+such that lf(s) -f(t)I &lt; e ifs e K, t e K, Is -ti &lt; ~-
+Now form a partition P = {x0, x1, &#8226;&#8226;&#8226; , xn} of [a, b], as follows: 
+Each ui occurs in P. Each vi occurs in P. No point of any segment (ui, vi) 
+occurs in P. If xi-i is not one of the ui, then fl.xi&lt;~-
+Note that Mi -mi~ 2M for every i, and that Mi -mi~ e unless 
+xi-i is one of the ui. Hence, as in the proof of Theorem 6.8, 
+U(P,f, oc) -L(P,f, oc) ~ [oc(b) -a(a)]e + 2Me. 
+Since e is arbitrary, Theorem 6.6 shows that/ e af(oc). 
+Note: If f and oc have a common point of discontinuity, then/ need not 
+be in al( a). Exercise 3 shows this. 
+6.11 Theorem Suppose f e af(a) on [a, b], m ~f ~ M, &lt;/&gt; is continuous on 
+[m, M], and h(x) = &lt;/&gt;(f(x)) on [a, b]. Then he af(a) on [a, b]. 
+(18) 
+(19) Proof Choose e &gt; 0. Since &lt;/&gt; is uniformly continuous on [m, M], there 
+exists ~ &gt; 0 such that ~ &lt; e and I q,(s) -&lt;/&gt;(t) I &lt; e if Is -t I ~ ~ and 
+s, t E [m, M]. 
+Since/ e af(a), there is a partition P = {x0, x1, ... , xn} of [a, b] such 
+that 
+U(P,f, a) -L(P,f, a) &lt; ~2&#8226; 
+Let M,, mi have the same meaning as in Definition 6.1, and let Mt, mt 
+be the analogous numbers for h. Divide the numbers 1, ... , n into two 
+classes: i e A if Mi -mi&lt;~, i e B if Mi -mi~~-
+For i e A, our choice of~ shows that Mi* -mt'~ e. 
+For i e B, Mi* -mt'~ 2K, where K = sup I &lt;/&gt;(t)I, m ~ t ~ M. By 
+(18), we have 
+~ L fl.ai ~ L (Mi -mi) fl.oci &lt; ~2 
+ieB ieB 
+so that I, eB fl.ai &lt; ~-It follows that 
+U(P, h, a)-L(P, h, a)= I (M:' -mi) fl.oci + L (Mt -mi) fl.oci 
+ieA ieB 
+~ e[a(b) -a(a)] + 2K~ &lt; e[oc(b) -a(a) + 2K]. 
+Since e was arbitrary, Theorem 6.6 implies that he af(a). 
+Remark: This theorem suggests the question: Just what functions are 
+Riemann-integrable? The answer is given by Theorem l l .33(b). 128 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+PROPERTIES OF THE INTEGRAL 
+6.12 Theorem 
+(a) If f1 e af(oc) andf2 E af(oc) on [a, b], then 
+fi + f2 E af(oc), 
+cf e af(oc) for every constant c, and 
+b b (f1 + f2) da = f1 doc + f2 doc, 
+a a a 
+b b 
+cf doc = c f doc. 
+a a 
+(b) /f fi(x) ~f2(x) on [a, b], then 
+a a 
+(c) If f e af(oc) on [a, b] and if a&lt; c &lt; b, then f e Bt'(oc) on [a, c] and on 
+[c, b], and 
+C b b 
+f doc + f doc = f doc. 
+a c a 
+(d) Iffe al(oc) on [a, b] and if )f(x)I ~Mon [a, b], then 
+b 
+f doc ~ M[oc(b) -oc(a)]. 
+a 
+b b b 
+f d(oc1 + oc2) = f doc1 + f doc2 ; 
+a a a 
+zf fe al(oc) and c is a positive constant, thenfe al(coc) and 
+b b 
+f d(coc) = c f doc. 
+a a 
+Proof If f = fi + f2 and P is any partition of [a, b ], we have 
+(20) L(P,f1, oc) + L(P,f2, oc) S L(P,f, oc) 
+~ U(P,f, oc) S U(P,fi, oc) + U(P,f2, oc). 
+If f1 e af(oc) and f2 e af(oc), let e &gt; 0 be given. There are partitions P1 
+(j = 1, 2) such that 
+U(P1,Jj, oc) -L(P1,Jj, oc) &lt; e. </description></item></channel></rss>

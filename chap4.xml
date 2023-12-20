@@ -1,0 +1,716 @@
+<rss version="2.0">
+<channel><item><title>6 Infinite Limits and Limits at Infinity</title><num_pages>3</num_pages><link>/app/basics/rudin/chap4/6_Infinite_Limits_and_Limits_at_Infinity.pdf</link><description>CONTINUITY 85 
+4.3 Definition Suppose we have two complex functions,/ and g, both defined 
+on E. By f + g we mean the function which assigns to each point x of E the 
+number f(x) + g(x). Similarly we define the difference f -g, the product fg, 
+and the quotientf/g of the two functions, with the understanding that the quo&#173;
+tient is defined only at those points x of E at which g(x) "I:-0. If f assigns to each 
+point x of E the same number c, then f is said to be a constant function, or 
+simply a constant, and we write f = c. If f and g are real functions, and if 
+f(x) ~ g(x) for every x e E, we shall sometimes write f ~ g, for brevity. 
+Similarly, if f and g map E into Rk, we define f + g and f &#183; g by 
+(f + g)(x) = f(x) + g(x), (f &#183; g)(x) = f(x) &#8226; g(x); 
+and if). is a real number, (lf)(x) = ).f(x). 
+4.4 Theorem Suppose E c X, a metric space, p is a limit point of E, f and g 
+are complex functions on E, and 
+lim f(x) = A, lim g(x) = B. 
+x&#10132;p 
+Tl1en (a) lim (f + g)(x) = A + B; 
+x&#10132;p 
+(b) lim (fg)(x) = AB; 
+x&#10132;p 
+(c) lim [_ (x) = ~, if B "I:-0. 
+x&#10132;p g B 
+Proof In view of Theorem 4.2, these assertions follow immediately from 
+the analogous properties of sequences (Theorem 3.3). 
+Remark If f and g map E into Rk, then (a) remains true, and (b) becomes 
+(b') lim (f &#183; g)(x) = A &#183; B. 
+(Compare Theorem 3.4.) 
+CONTINUOUS FUNCTIONS 
+4.S Definition Suppose X and Y are metric spaces, E c X, p e E, and f maps 
+E into Y. Then f is said to be continuous at p if for every e &gt; 0 there exists a 
+c5 &gt; 0 such that 
+dr(f(x),f(p)) &lt; e 
+for all points x e E for which dx(x, p) &lt; b. 
+If f is continuous at every point of E, then f is said to be continuous on E. 
+It should be noted that f has to be defined at the point p in order to be 
+continuous at p. (Compare this with the remark following Definition 4.1.) 86 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+If p is an isolated point of E, then our definition implies that every function 
+f which has E as its domain of definition is continuous at p. For, no matter 
+which e &gt; 0 we choose, we can pick b &gt; 0 so that the only point x e E for which 
+dx(x,p) &lt;bis x = p; then 
+dy(f(x),f(p)) = 0 &lt; e. 
+4.6 Theorem In the situation given in Definition 4.5, assume also that p is a 
+limit point of E. Then f is continuous at p if and only if limx ... pf(x) = f(p). 
+Proof This is clear if we compare Definitions 4.1 and 4.5. 
+We now turn to compositions of functions. A brief statement of the 
+following theorem is that a continuous function of a continuous function is 
+continuous. 
+4. 7 Theorem Suppose X, Y, Z are metric spaces, E c X, f maps E into Y, g 
+maps the range off, f(E), into Z, and h is the mapping of E into Z defined by 
+h(x) = g(f (x)) (x e E). 
+If f is continuous at a point p e E anti if g is continuous at the point f(p), then h is 
+continuous at p. 
+This function his called the composition or the composite off and g. The 
+, 
+notation 
+h =g0f 
+is frequently used in this context. 
+Proof Let e &gt; 0 be given. Since g is continuous at f(p), there exists 
+r, &gt; 0 such that 
+d2(g(y), g(f(p))) &lt; e if dy(y,f(p)) &lt; r, and y ef(E). 
+Since f is continuous at p, there exists b &gt; 0 such that 
+dr(f(x),f(p)) &lt; r, if dx(x, p) &lt;band x e E. 
+It follows that 
+d2(h(x), h(p)) = d2(g(f(x)), g(f(p))) &lt; e 
+if dx(x, p) &lt;band x e E. Thus his continuous at p. 
+4.8 Theorem A mapping 1&#183; of a metric space X into a metric space Y is con&#173;
+tinuous on X if and only if 1-1 ( V) is open in X for every open set V in Y. 
+(Inverse images are defined in Definition 2.2.) This is a very useful charac&#173;
+terization of continuity. CONTINUI'l'Y 87 
+Proof Suppose/is continuous on X and Vis an open set in Y. We have 
+to show that every point of 1-1(V) is an interior point of 1-1(V). So, 
+suppose p e X and f (p) e V. Since V is open, there exists e &gt; 0 such that 
+ye V if dr(f(p), y) &lt; e; and since f is continuous at p, there exists b &gt; 0 
+such that dr(f(x),f(p)) &lt; e if dx(x, p) &lt; b. Thus x ef-1(V) as soon as 
+dx(x,p) &lt; b. 
+Conversely, suppose f-1(V) is open in X for every open set Vin Y. 
+Fix p e X and e &gt; 0, let V be the set of ally e Y such that dr(Y,f(p)) &lt; e. 
+Then Vis open; hencef-1(V) is open; hence there exists b &gt; 0 such that 
+x ef-1(V)as soon as dx(P, x) &lt; b. But if x e 1-1(V), then f(x) e V, so 
+that dr(f(x),f(p)) &lt; e. 
+This completes the proof. 
+Corollary A mapping f of a metric space X into a metric space Y is continuous if 
+and only if f-1 ( C) is closed in X for every closed set C in Y. 
+This follows from the theorem, since a set is closed if and only if its com&#173;
+plement is open, and sincef-1(Ec) = [f-1(E)]c for every E c Y. 
+We now turn to complex-valued and vector-valued functions, and to 
+functions defined on subsets of Rk. 
+4.9 Theorem Let f and g be complex continuous functions on a metric space X. 
+Thenf + g,fg, andf /g are continuous on X. 
+In the last case, we must of course assume that g(x) "I:-0, for all x e X. 
+Proof At isolated points of X there is nothing to prove. At limit points, 
+the statement follows from Theorems 4.4 and 4.6. 
+4.10 Theorem 
+(7) (a) Let /1, &#8226;&#8226;&#8226; , .h be real functions on a metric space X, and let f be the 
+mapping of X into Rk defined by 
+f(x) = (Ji(x), ... ,/4(x)) (x EX); 
+then f is continuous if and only if each of the functions Ji, ... , /2 is continuous. 
+(b) If f and g are continuous mappings of X into Rk, then f + g and f &#183; g 
+are continuous on X. 
+The functions Ji, ... , /2 are called the components off. Note that 
+f + g is a mapping into Rk, whereas f &#8226; g is a real function on X. </description></item><item><title>5 Monotonic Functions</title><num_pages>2</num_pages><link>/app/basics/rudin/chap4/5_Monotonic_Functions.pdf</link><description>84 PllINCIPLES OF MATHEMATICAL ANALYSIS 
+if there is a point q e Y with the following property: For every e &gt; 0 there 
+exists a o &gt; 0 such that 
+(2) d1(f(x), q) &lt; e 
+for all points x e E for which 
+(3) 0 &lt; dx(x,p) &lt; o. 
+The symbols dx and dr refer to the distances in X and Y, respectively. 
+If X and/ or Y are replaced by the real line, the complex plane, or by some 
+euclidean space Rk, the distances dx, dr are of course replaced by absolute values, 
+or by norms of differences ( see Sec. 2.16). 
+It should be noted that p e X, but that p need not be a point of E 
+in the above definition. Moreover, even if p e E, we may very well have 
+f(p) f:. limx&#10132;pf(x). 
+We can recast this definition in terms of limits of sequences: 
+4.2 Theorem Let X, Y, E, f, and p be as in Definition 4. I. Then 
+(4) limf(x) =q 
+x&#10132;p 
+if and only if 
+(5) lim f(pn) =q 
+n&#10132;oo 
+for every sequence {Pn} in E such that 
+(6) Pn f:. P, lim Pn = p. 
+n&#10132;oo 
+Proof Suppose ( 4) holds. Choose {Pn} in E satisfying (6). Let e &gt; 0 
+be given. Then there exists o &gt; 0 such that dr(f(x), q) &lt; e if x e E 
+and O &lt; dx(x, p) &lt; o. Also, there exists N such that n &gt; N implies 
+0 &lt; dx(Pn ,p) &lt; o. Thus, for n &gt; N, we have dy(f(pn), q) &lt; e, which 
+shows that (5) holds. 
+Conversely, suppose ( 4) is false. Then there exists some e &gt; 0 such 
+that for every o &gt; 0 there exists a point x e E (depending on o), for which 
+dr(f(x), q) :2:: e but O &lt; dx(x, p) &lt; o. Taking on = I/n (n = I, 2, 3, ... ), we 
+thus find a sequence in E satisfying (6) for which (5) is false. 
+Corollary If f has a limit at p, this limit is unique. 
+This follows from Theorems 3.2(b) and 4.2. CONTINUITY 85 
+4.3 Definition Suppose we have two complex functions,/ and g, both defined 
+on E. By f + g we mean the function which assigns to each point x of E the 
+number f(x) + g(x). Similarly we define the difference f -g, the product fg, 
+and the quotientf/g of the two functions, with the understanding that the quo&#173;
+tient is defined only at those points x of E at which g(x) "I:-0. If f assigns to each 
+point x of E the same number c, then f is said to be a constant function, or 
+simply a constant, and we write f = c. If f and g are real functions, and if 
+f(x) ~ g(x) for every x e E, we shall sometimes write f ~ g, for brevity. 
+Similarly, if f and g map E into Rk, we define f + g and f &#183; g by 
+(f + g)(x) = f(x) + g(x), (f &#183; g)(x) = f(x) &#8226; g(x); 
+and if). is a real number, (lf)(x) = ).f(x). 
+4.4 Theorem Suppose E c X, a metric space, p is a limit point of E, f and g 
+are complex functions on E, and 
+lim f(x) = A, lim g(x) = B. 
+x&#10132;p 
+Tl1en (a) lim (f + g)(x) = A + B; 
+x&#10132;p 
+(b) lim (fg)(x) = AB; 
+x&#10132;p 
+(c) lim [_ (x) = ~, if B "I:-0. 
+x&#10132;p g B 
+Proof In view of Theorem 4.2, these assertions follow immediately from 
+the analogous properties of sequences (Theorem 3.3). 
+Remark If f and g map E into Rk, then (a) remains true, and (b) becomes 
+(b') lim (f &#183; g)(x) = A &#183; B. 
+(Compare Theorem 3.4.) 
+CONTINUOUS FUNCTIONS 
+4.S Definition Suppose X and Y are metric spaces, E c X, p e E, and f maps 
+E into Y. Then f is said to be continuous at p if for every e &gt; 0 there exists a 
+c5 &gt; 0 such that 
+dr(f(x),f(p)) &lt; e 
+for all points x e E for which dx(x, p) &lt; b. 
+If f is continuous at every point of E, then f is said to be continuous on E. 
+It should be noted that f has to be defined at the point p in order to be 
+continuous at p. (Compare this with the remark following Definition 4.1.) </description></item><item><title>7 Exercises</title><num_pages>2</num_pages><link>/app/basics/rudin/chap4/7_Exercises.pdf</link><description>CONTINUI'l'Y 87 
+Proof Suppose/is continuous on X and Vis an open set in Y. We have 
+to show that every point of 1-1(V) is an interior point of 1-1(V). So, 
+suppose p e X and f (p) e V. Since V is open, there exists e &gt; 0 such that 
+ye V if dr(f(p), y) &lt; e; and since f is continuous at p, there exists b &gt; 0 
+such that dr(f(x),f(p)) &lt; e if dx(x, p) &lt; b. Thus x ef-1(V) as soon as 
+dx(x,p) &lt; b. 
+Conversely, suppose f-1(V) is open in X for every open set Vin Y. 
+Fix p e X and e &gt; 0, let V be the set of ally e Y such that dr(Y,f(p)) &lt; e. 
+Then Vis open; hencef-1(V) is open; hence there exists b &gt; 0 such that 
+x ef-1(V)as soon as dx(P, x) &lt; b. But if x e 1-1(V), then f(x) e V, so 
+that dr(f(x),f(p)) &lt; e. 
+This completes the proof. 
+Corollary A mapping f of a metric space X into a metric space Y is continuous if 
+and only if f-1 ( C) is closed in X for every closed set C in Y. 
+This follows from the theorem, since a set is closed if and only if its com&#173;
+plement is open, and sincef-1(Ec) = [f-1(E)]c for every E c Y. 
+We now turn to complex-valued and vector-valued functions, and to 
+functions defined on subsets of Rk. 
+4.9 Theorem Let f and g be complex continuous functions on a metric space X. 
+Thenf + g,fg, andf /g are continuous on X. 
+In the last case, we must of course assume that g(x) "I:-0, for all x e X. 
+Proof At isolated points of X there is nothing to prove. At limit points, 
+the statement follows from Theorems 4.4 and 4.6. 
+4.10 Theorem 
+(7) (a) Let /1, &#8226;&#8226;&#8226; , .h be real functions on a metric space X, and let f be the 
+mapping of X into Rk defined by 
+f(x) = (Ji(x), ... ,/4(x)) (x EX); 
+then f is continuous if and only if each of the functions Ji, ... , /2 is continuous. 
+(b) If f and g are continuous mappings of X into Rk, then f + g and f &#183; g 
+are continuous on X. 
+The functions Ji, ... , /2 are called the components off. Note that 
+f + g is a mapping into Rk, whereas f &#8226; g is a real function on X. 88 PllINCIPLES OF MATHEMATICAL ANALYSIS 
+Proof Part (a) follows from the inequalities 
+k i 
+11,(x) -f,(y) I =s; I f(x) -f(y) I = L lfi(x) -fi(y) I 2 ' 
+t= 1 
+for j = I, ... , k. Part (b) follows from (a) and Theorem 4.9. 
+4.11 Examples If x1, &#8226;&#8226;&#8226; , xk are the coordinates of the point x e Rk, the 
+functions &lt;t,, defined by 
+(8) 
+are continuous on Rk, since the inequality 
+I &lt;Pi(x) -&lt;Pi(Y) I :s; Ix -YI 
+shows that we may take b = e in Definition 4.5. The functions &lt;Pt are sometimes 
+called the coordinate functions. 
+Repeated application of Theorem 4.9 then shows that every monomial 
+(9) x:1~2 &#8226; , , x::k 
+where n1, &#8226;&#8226;&#8226; , nk are nonnegative integers, is continuous on Rk. The same is 
+true of constant multiples of (9), since constants are evidently continuous. It 
+follows that every polynomial P, given by 
+(10) 
+is continuous on Rk. Here the coefficients cni&#183;&#183;&#8226;nk are complex numbers, n1, &#8226;&#8226;&#8226; , nk 
+are nonnegative integers, and the sum in (IO) has finitely many terms. 
+Furthermore, every rational function in x1, ... , xk, that is, every quotient 
+of two polynomials of the form (10), is continuous on Rk wherever the denomi&#173;
+nator is different from zero. 
+From the triangle inequality one sees easily that 
+(11) I Ix I -I YI I =s; Ix -YI (x, Y e Rk). 
+Hence the mapping x ~ Ix I is a continuous real function on Rk. 
+If now f is a continuous mapping from a metric space X into Rk, and if &lt;P 
+is defined on Xby setting &lt;J,(p) = lf(p)I, it follows, by Theorem 4.7, that &lt;J, is a 
+continuous real function on X. 
+4.12 Remark We defined the notion of continuity for functions defined on a 
+subset E of a metric space X. However, the complement of E in X plays no 
+role whatever in this definition (note that the situation was somewhat different 
+for limits of functions). Accordingly, we lose nothing of interest by discarding 
+the complement of the domain off This means that we may just as well talk 
+only about continuous mappings of one metric space into another, rather than </description></item><item><title>2 Continuity and Compactness</title><num_pages>5</num_pages><link>/app/basics/rudin/chap4/2_Continuity_and_Compactness.pdf</link><description>NUMERICAL SEQUENCES AND SERIES 75 
+Put 
+Yn = ao/Jn + a1/Jn-l +'''+an/Jo&#8226; 
+We wish to show that Cn &#10132; AB. Since An B &#9658; AB, it suffices to 
+show that 
+(21) lim Yn = 0. 
+Put 
+[It is here that we use (a).] Let e &gt; 0 be given. By (c}, /Jn &#9658; 0. Hence we 
+can choose N such that I /Jn I ~ e for n ~ N, in which case 
+IYnl ~I/Joan+&#183;&#183;&#183;+ fJNan-NI + I/JN+lan-N-1 + &#183;&#183; &#183; + /Jnaol 
+~I/Joan+&#183;&#183;&#183;+ fJNan-NI + ea. 
+Keeping N fixed, and letting n &#10132; oo, we get 
+lim sup I Yn I ~ ea, 
+n&#10132;oo 
+since ak &#10132; 0 ask&#10132; oo. Since e is arbitrary, (21) follows. 
+Another question which may be asked is whether the series ten, if con&#173;
+vergent, must have the sum AB. Abel showed that the answer _is in the affirma&#173;
+tive. 
+3.51 Theorem If the series tan, tbn, ten converge to A, B, C, and 
+Cn = ao bn + ... + an ho' then C = AB. 
+Here no assumption is made concerning absolute convergence. We shall 
+give a simple proof (which depends on the continuity of power series) after 
+Theorem 8.2. 
+REARRANGEMENTS 
+3.52 Definition Let {kn}, n = 1, 2, 3, ... , be a sequence in which every 
+positive integer appears once and only once (that is, {kn} is a 1-1 function from 
+J onto J, in the notation of Definition 2.2). Putting 
+' a = ak n " (n=l,2,3, ... ), 
+we say that ta~ is a rearrangement of tan . 76 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+If {sn}, {s~} are the sequences of partial sums of tan, ta~, it is easily seen 
+that, in general, these two sequences consist of entirely different numbers. 
+We are thus led to the problem of determining under what conditions all 
+rearrangements of a convergent series will converge and whether the sums are 
+necessarily the same. 
+3.53 Example Consider the convergent series 
+(22) 1-&#189;+&#188;-&#188;+&#189;--l;+&#183;&#183;&#183; 
+and one of its rearrangements 
+(23) 1 + &#188; -&#189; + t + t -&#188; + &#189; + 111 -&#188; + ... 
+in which two positive terms are always followed by one negative. If s is the 
+sum of (22), then 
+s &lt; 1 -&#189; + &#189; = i, 
+Since 
+1 1 1 
+- 3 + 4k -1 -2k &gt; O 
+for k ~ 1, we see that s; &lt; s~ &lt; s~ &lt; &#183; &#183; &#183; , where s~ is nth partial sum of (23). 
+Hence 
+1. , , _S_ Im sup Sn &gt; S3 = 0, 
+n&#10132;oo 
+so that (23) certainly does not converge to s [we leave it to the reader to verify 
+that (23) does, however, converge]. 
+This example illustrates the following theorem, due to Riemann. 
+3.54 Theorem Let tan be a ,fleries of real numbers which converges, but not 
+absolutely. Suppose 
+-00 ~ CX ~ p ~ 00. 
+Then there exists a rearrangement ta~ with partial sums s~ such that 
+(24) lim inf s~ = ex, lim sups~ = p. 
+n&#10132;oo n&#10132;oo 
+Proof Let 
+(n = 1, 2, 3, ... ). NUMERICAL SEQUENCES AND SERIES 77 
+Then Pn -qn = an, Pn + qn = I an I, Pn ~ 0, qn ~ 0. The series "'f.pn, "'f.qn 
+must both diverge. 
+For if both were convergent, then 
+would converge, contrary to hypothesis. Since 
+N N N N L an = L (Pn -qn) = L Pn -L qn, 
+n=1 n=1 n=1 n=1 
+divergence of "'f.pn and convergence of "'f.qn ( or vice versa) implies diver&#173;
+gence of "'f.an , again contrary to hypothesis. 
+Now let P1, P2, P3, &#8226;&#8226;&#8226; denote the nonnegative terms of "'f.an, in the 
+order in which they occur, and let Q1, Q2, Q3, .&#8226;. be the absolute values 
+of the negative terms of "'f.an, also in their original order. 
+The series "'f.Pn, "'f.Qn differ from "'f.pn, "'f.qn only by zero terms, and 
+are therefore divergent. 
+We shall construct sequences {mn}, {kn}, such that the series 
+(25) P1 + &#183;&#8226;&#183; +P,,,1 -Q1 -&#183;&#183;&#183; -Qk1 +Pm1+1 + &#183;&#183;&#183; 
++Pm2 -Qk1+1 -&#183;&#183;&#8226; -Qk2 + &#8226;&#8226;&#8226;, 
+which clearly is a rearrangement of "'f.an, satisfies (24). 
+Choose real-valued sequences {C&lt;n}, {/3n} such that C&lt;n---+ C&lt;, /3n---+ /3, 
+an &lt; Pn, /31 &gt; o. 
+Let m1, k1 be the smallest integers such that 
+P1 + &#183;&#183;&#183; +Pm1 &gt; /31, 
+P1 + &#8226; &#8226; &#8226; + P m1 -Ql -&#8226; &#8226; &#8226; -Qk1 &lt; C(l; 
+let m2, k2 be the smallest integers such that 
+P1 + &#8226;&#8226;&#8226; +Pm1 -Q1 -&#8226;&#183;&#8226; -Qk1 +P,,,1+1 + &#8226;&#8226;&#8226; +Pm2 &gt; /32, 
+P1 + &#8226;&#8226;&#8226; +P,n1 -Q1 -&#183;&#8226;&#8226; -Qk1 +Pm1+l + &#8226;&#8226;&#8226; +Pm2 -Qk1+l 
+-... -Qk2 &lt; C&lt;2; 
+and continue in this way. This is possible since "'f.Pn and "'f.Qn diverge. 
+If xn, Yn denote the partial sums of (25) whose last terms are Pm", 
+-Qkn, then 
+Since Pn---+ 0 and Qn---+ 0 as n---+ oo, we see that Xn---+ /3, Yn---+ C(. 
+Finally, it is clear that no number less than C&lt; or greater than /3 can 
+be a subsequential limit of the partial sums of (25). 78 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+3.SS Theorem lf"f.an is a series of complex numbers which converges absolutely, 
+then every rearrangement of "f.an converges, and they all converge to the same sum. 
+Proof Let "f.a~ be a rearrangement, with partial sums s~. Given e &gt; 0, 
+there exists an integer N such that m ~ n ~ N implies 
+(26) 
+&#8226; 1=n 
+Now choose p such that the integers 1, 2, ... , N are all contained in the 
+set k1, k2, &#8226;&#8226;&#8226; , kP (we use the notation of Definition 3.52). Then if n &gt; p, 
+the numbers a1, ... , aN will cancel in the difference sn -s~, so that 
+I sn -s~ I ~ e, by (26). Hence {s~} converges to the same sum as {sn}. 
+EXERCISES 
+1. Prove that convergence of {sn} implies convergence of { I Sn I}. Is the converse true? 
+2. Calculate lim (V n2 + n -n). 
+n&#10132;OO 
+3. If s1 = V2, and 
+(n = 1, 2, 3, ... ), 
+prove that {sn} converges, and that Sn&lt; 2 for n = 1, 2, 3, ... . 
+4. Find the upper and lower limits of the sequence {sn} defined by 
+St =0; 
+S. For any two real sequences {an}, {bn}, prove that 
+lim sup (an + bn) ::::;; lim sup On + lim sup bn' 
+n&#10132;OO n&#10132;OO n&#10132;OO 
+provided the sum on the right is not of the form oo -oo. 
+6. Investigate the behavior (convergence or divergence) of :l:an if 
+(a) On ='Vn + 1-Vn; 
+(b) On = v n + 1 -Vn; 
+n 
+(c) On= (v" n -l)n; 
+1 
+(d) On = 1 + zn' for complex values of z. 
+7. Prove that the convergence of :l:an implies the convergence of 
+van 
+:E n , 
+if On::?: 0. NUMERICAL SEQUENCES AND SERIES 79 
+8. If Lan converges, and if {bn} is monotonic and bounded, prove that Lan bn con&#173;
+verges. 
+9. Find the 1&#183;adius of convergence of each of the following power series: 
+2n 
+(c) I: 2 zn, n 2n 
+(b) L ~ zn, 
+10. Suppose that the coefficients of the power series I:an zn are integers, infinitely many 
+of which are distinct from zero. Prove that the radius of convergence is at most 1. 
+11. Suppose On &gt; 0, Sn = 01 + ... + On' and La,. diverges. 
+(a) Prove that L 1 :nan diverges. 
+(b) Prove that 
+and deduce that I:~ diverges. 
+Sn 
+(c) Prove that 
+""an and deduce that ,t.., 2 converges. 
+Sn 
+(d) What can be said about +,,,+ON +k 2: l _ SN 
+SN+k SN+k 
+On 1 1 2~----
+sn Sn-1 Sn 
+L On 
+1 + nan and 
+12. Suppose an &gt; 0 and Lan converges. Put 
+(a) Prove that 00 
+rn= L Om, 
+m=n 
+1 rn &gt; -&#173;rm 
+if m &lt; n, and deduce that I:~ diverges. 
+rn </description></item><item><title>1 Continuous Functions</title><num_pages>3</num_pages><link>/app/basics/rudin/chap4/1_Continuous_Functions.pdf</link><description>NUMERICAL SEQUENCES AND SERIES 73 
+Thus two convergent series may be added term by term, and the result&#173;
+ing series converges to the sum of the two series. The situation becomes more 
+complicated when we consider multiplication of two series. To begin with, we 
+have to define the product. This can be done in several ways; we shall consider 
+the so-called ''Cauchy product." 
+3.48 Definition Given La" and Lb", we put 
+" en= L akbn-k 
+k=O (n=0,1,2, ... ) 
+and call LC" the product of the two given series. 
+This definition may be motivated as follows. If we take two power 
+series Lanz" and "'&#163;b"z", multiply them term by term, and collect terms contain&#173;
+ing the same power of z, we get 
+00 00 L a" z" &#183; L bn z" = (a0 + a1z + a2 z2 + &#183; &#183; &#183;)(b0 + b1z + b2 z2 + &#183; &#183; &#183;) 
+n=O n=O 
+= a0 b0 + (a0 b1 + a1 b0}z + (a0 b2 + a1 b1 + a2 b0}z2 + &#183; &#183; &#183; 
+= Co + C 1 Z + C 2 z2 + ' ' ' . 
+Setting z = 1, we arrive at the above definition. 
+3.49 Example If 
+and A" &#10132; A, B" &#10132; B, then it is not at all clear that { C"} will converge to AB, 
+since we do not have C" = A" B". The dependence of { C"} on {A"} and {.B"} is 
+quite a complicated one (see the proof of Theorem 3.50). We shall now show 
+that the product of two convergent series may actually diverge. 
+The series 
+00 ( -1)" 1 1 1 I ----;===1--+---+&#183;&#183;&#183; n=oJn + I J2 J3 J4 
+converges (Theorem 3.43). We form the product of this series with itself and 
+obtain 
+00 
+LC"= 1 -
+n=O 1 1 1 
+J3 + JiJ2 + J3 
+1 1 1 1 
+-J4+ J3J2 + J2J3 + J4 + ... ' 74 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+so that 
+Since 
+we have n 1 
+en =(-I)nL --:=====&#183; 
+k = o J (n -k + 1 )(k + I) 
+( n -k + 1 )(k + I) = n -+I 2 2 n - --k 2 
+I I ~ 2 _ 2(n + I) 
+C &gt; L, ------, 
+n -k=on +2 n +2 n -+I 2 2 
+&#8226; 
+so that the condition en &#10132; 0, which is necessary for the convergence of l:cn , is 
+not satisfied. 
+In view of the next theorem, due to Mertens, we note that we have here 
+considered the product of two nonabsolutely convergent series. 
+3.50 Theorem Suppose 
+Then 00 
+(a) L an converges absolutely, 
+n=O 
+00 
+(b) Lan= A, 
+n=O 
+00 
+(c) L bn = B, 
+n=O 
+n 
+(d) Cn = L ak bn-k 
+k=O (n = 0, I, 2, ... ). 
+00 L Cn = AB. 
+n=O 
+That is, the product of two convergent series converges, and to the right 
+value, if at least one of the two series converges absolutely. 
+Proof Put 
+Then 
+Cn = aobo + (aob1 + a1bo) + &#183; &#183; &#183; + (aobn + a1bn-1 + &#183; &#183;&#183; + anbo) 
+= a0Bn + a1 Bn-i +&#183;&#183;&#183;+an Bo 
+= ao(B + Pn) + a1(B + Pn-1) + &#183; &#183; &#183; + an(B + Po) 
+= AnB + aoPn + a1Pn-1 + ''' + anPo NUMERICAL SEQUENCES AND SERIES 75 
+Put 
+Yn = ao/Jn + a1/Jn-l +'''+an/Jo&#8226; 
+We wish to show that Cn &#10132; AB. Since An B &#9658; AB, it suffices to 
+show that 
+(21) lim Yn = 0. 
+Put 
+[It is here that we use (a).] Let e &gt; 0 be given. By (c}, /Jn &#9658; 0. Hence we 
+can choose N such that I /Jn I ~ e for n ~ N, in which case 
+IYnl ~I/Joan+&#183;&#183;&#183;+ fJNan-NI + I/JN+lan-N-1 + &#183;&#183; &#183; + /Jnaol 
+~I/Joan+&#183;&#183;&#183;+ fJNan-NI + ea. 
+Keeping N fixed, and letting n &#10132; oo, we get 
+lim sup I Yn I ~ ea, 
+n&#10132;oo 
+since ak &#10132; 0 ask&#10132; oo. Since e is arbitrary, (21) follows. 
+Another question which may be asked is whether the series ten, if con&#173;
+vergent, must have the sum AB. Abel showed that the answer _is in the affirma&#173;
+tive. 
+3.51 Theorem If the series tan, tbn, ten converge to A, B, C, and 
+Cn = ao bn + ... + an ho' then C = AB. 
+Here no assumption is made concerning absolute convergence. We shall 
+give a simple proof (which depends on the continuity of power series) after 
+Theorem 8.2. 
+REARRANGEMENTS 
+3.52 Definition Let {kn}, n = 1, 2, 3, ... , be a sequence in which every 
+positive integer appears once and only once (that is, {kn} is a 1-1 function from 
+J onto J, in the notation of Definition 2.2). Putting 
+' a = ak n " (n=l,2,3, ... ), 
+we say that ta~ is a rearrangement of tan . </description></item><item><title>4 Discontinuities</title><num_pages>2</num_pages><link>/app/basics/rudin/chap4/4_Discontinuities.pdf</link><description>CONTINUITY 
+The function concept and some of the related terminology were introduced in 
+Definitions 2.1 and 2.2. Although we shall (in later chapters) be mainly interested 
+in real and complex functions (i.e., in functions whose values are real or complex 
+numbers) we shall also discuss vector-valued functions (i.e., functions with 
+values in Rk) and functions with values in an arbitrary metric space. The theo&#173;
+rems we shall discuss in this general setting would not become any easier if we 
+restricted ourselves to real functions, for instance, and it actually simplifies and 
+clarifies the picture to discard unnecessary hypotheses and to state and prove 
+theorems in an appropriately general context. 
+The domains of definition of our functions will also be metric spaces, 
+suitably specialized in various instances. 
+LIMITS OF FUNCTIONS 
+4.1 Definition Let X and Y be metric spaces; suppose E c X, f maps E into 
+Y, and p is a limit point of E. We write f(x) ~ q as x ~ p, or 
+(1) lim/(x) = q 
+x&#10132;p 84 PllINCIPLES OF MATHEMATICAL ANALYSIS 
+if there is a point q e Y with the following property: For every e &gt; 0 there 
+exists a o &gt; 0 such that 
+(2) d1(f(x), q) &lt; e 
+for all points x e E for which 
+(3) 0 &lt; dx(x,p) &lt; o. 
+The symbols dx and dr refer to the distances in X and Y, respectively. 
+If X and/ or Y are replaced by the real line, the complex plane, or by some 
+euclidean space Rk, the distances dx, dr are of course replaced by absolute values, 
+or by norms of differences ( see Sec. 2.16). 
+It should be noted that p e X, but that p need not be a point of E 
+in the above definition. Moreover, even if p e E, we may very well have 
+f(p) f:. limx&#10132;pf(x). 
+We can recast this definition in terms of limits of sequences: 
+4.2 Theorem Let X, Y, E, f, and p be as in Definition 4. I. Then 
+(4) limf(x) =q 
+x&#10132;p 
+if and only if 
+(5) lim f(pn) =q 
+n&#10132;oo 
+for every sequence {Pn} in E such that 
+(6) Pn f:. P, lim Pn = p. 
+n&#10132;oo 
+Proof Suppose ( 4) holds. Choose {Pn} in E satisfying (6). Let e &gt; 0 
+be given. Then there exists o &gt; 0 such that dr(f(x), q) &lt; e if x e E 
+and O &lt; dx(x, p) &lt; o. Also, there exists N such that n &gt; N implies 
+0 &lt; dx(Pn ,p) &lt; o. Thus, for n &gt; N, we have dy(f(pn), q) &lt; e, which 
+shows that (5) holds. 
+Conversely, suppose ( 4) is false. Then there exists some e &gt; 0 such 
+that for every o &gt; 0 there exists a point x e E (depending on o), for which 
+dr(f(x), q) :2:: e but O &lt; dx(x, p) &lt; o. Taking on = I/n (n = I, 2, 3, ... ), we 
+thus find a sequence in E satisfying (6) for which (5) is false. 
+Corollary If f has a limit at p, this limit is unique. 
+This follows from Theorems 3.2(b) and 4.2. </description></item><item><title>0 Limits of Functions</title><num_pages>1</num_pages><link>/app/basics/rudin/chap4/0_Limits_of_Functions.pdf</link><description>NUMERICAL SEQUENCES AND SERIES 73 
+Thus two convergent series may be added term by term, and the result&#173;
+ing series converges to the sum of the two series. The situation becomes more 
+complicated when we consider multiplication of two series. To begin with, we 
+have to define the product. This can be done in several ways; we shall consider 
+the so-called ''Cauchy product." 
+3.48 Definition Given La" and Lb", we put 
+" en= L akbn-k 
+k=O (n=0,1,2, ... ) 
+and call LC" the product of the two given series. 
+This definition may be motivated as follows. If we take two power 
+series Lanz" and "'&#163;b"z", multiply them term by term, and collect terms contain&#173;
+ing the same power of z, we get 
+00 00 L a" z" &#183; L bn z" = (a0 + a1z + a2 z2 + &#183; &#183; &#183;)(b0 + b1z + b2 z2 + &#183; &#183; &#183;) 
+n=O n=O 
+= a0 b0 + (a0 b1 + a1 b0}z + (a0 b2 + a1 b1 + a2 b0}z2 + &#183; &#183; &#183; 
+= Co + C 1 Z + C 2 z2 + ' ' ' . 
+Setting z = 1, we arrive at the above definition. 
+3.49 Example If 
+and A" &#10132; A, B" &#10132; B, then it is not at all clear that { C"} will converge to AB, 
+since we do not have C" = A" B". The dependence of { C"} on {A"} and {.B"} is 
+quite a complicated one (see the proof of Theorem 3.50). We shall now show 
+that the product of two convergent series may actually diverge. 
+The series 
+00 ( -1)" 1 1 1 I ----;===1--+---+&#183;&#183;&#183; n=oJn + I J2 J3 J4 
+converges (Theorem 3.43). We form the product of this series with itself and 
+obtain 
+00 
+LC"= 1 -
+n=O 1 1 1 
+J3 + JiJ2 + J3 
+1 1 1 1 
+-J4+ J3J2 + J2J3 + J4 + ... ' </description></item><item><title>3 Continuity and Connectedness</title><num_pages>5</num_pages><link>/app/basics/rudin/chap4/3_Continuity_and_Connectedness.pdf</link><description>NUMERICAL SEQUENCES AND SERIES 79 
+8. If Lan converges, and if {bn} is monotonic and bounded, prove that Lan bn con&#173;
+verges. 
+9. Find the 1&#183;adius of convergence of each of the following power series: 
+2n 
+(c) I: 2 zn, n 2n 
+(b) L ~ zn, 
+10. Suppose that the coefficients of the power series I:an zn are integers, infinitely many 
+of which are distinct from zero. Prove that the radius of convergence is at most 1. 
+11. Suppose On &gt; 0, Sn = 01 + ... + On' and La,. diverges. 
+(a) Prove that L 1 :nan diverges. 
+(b) Prove that 
+and deduce that I:~ diverges. 
+Sn 
+(c) Prove that 
+""an and deduce that ,t.., 2 converges. 
+Sn 
+(d) What can be said about +,,,+ON +k 2: l _ SN 
+SN+k SN+k 
+On 1 1 2~----
+sn Sn-1 Sn 
+L On 
+1 + nan and 
+12. Suppose an &gt; 0 and Lan converges. Put 
+(a) Prove that 00 
+rn= L Om, 
+m=n 
+1 rn &gt; -&#173;rm 
+if m &lt; n, and deduce that I:~ diverges. 
+rn 80 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+(b) Prove that 
+On and deduce that L A 1-converges. 
+&#183;v rn 
+13. Prove that the Cauchy product of two absolutely convergent series converges 
+absolutely. 
+14. If {sn} is a complex sequence, define its arithmetic means an by 
+So+ S1 +'''+Sn Un= n+l (n =0, 1, 2, ... ). 
+(a) If lim Sn = s, prove that lim Un = s. 
+(b) Construct a sequence {sn} which does not converge, although lim an= 0. 
+(c) Can it happen that Sn&gt; 0 for all n and that lim sup Sn= oo, although lim an= 0? 
+(d) Put On = Sn -Sn-1, for n 2: 1. Show that 
+1 n 
+Sn -Un= l L kak. n + k=l 
+Assume that lim (nan)= 0 and that {an} converges. Prove that {sn} converges. 
+[This gives a converse of (a), but under the additional assumption that nan &#9658; 0.] 
+(e) Derive the last conclusion from a weaker hypothesis: Assume M &lt; oo, 
+I nan I~ M for all n, and lim an= a. Prove that lim Sn= a, by completing the 
+following outline: 
+If m &lt; n, then 
+m+ 1 1 n 
+Sn -Un= --(an -Um) + --L (sn -s,), n-m n-m l=m+l 
+For these i, 
+Fix e &gt; 0 and associate with each n the integer m that satisfies 
+Then (m + 1)/(n -m) &lt; 1/e and I Sn -s, I &lt; Me. Hence 
+lim suplsn -al ~Me. 
+ft&#10132; 00 
+Since e was arbitrary, Jim Sn = a. NUMERICAL SEQUENCES AND SERIES 81 
+15. Definition 3.21 can be extended to the case in which the an lie in some fixed Rk. 
+Absolute convergence is defined as convergence of :l: I an I, Show that Theorems 
+3.22, 3.23, 3.25(a), 3.33, 3.34, 3.42, 3.45, 3.47, and 3.55 are true in this more 
+general setting. (Only slight modifications are required in any of the proofs.) 
+16. Fix a positive number IX. Choose Xi &gt; v IX, and define X2, X3, X4, ... , by the 
+recursion formula 
+IX Xn+&#173;
+Xn &#8226; 
+(a) Prove that {xn} decreases monotonically and that lim Xn = v IX. 
+(b) Put Bn = Xn -v;, and show that 
+so that, setting f3 = 2 v IX, 2 82 en n 
+Bn +1 = 2 &lt; . ;&#173;
+Xn 2v IX 
+2n 
+Bi 
+e,, + 1 &lt; /3 (3 ( n = 1, 2, 3, ... ) . 
+(c) This is a good algorithm for computing square roots. since the recursion 
+formula is simple and the convergence is extremely rapid. For example, if IX= 3 
+and X1 = 2, show that e1//3 &lt; 110 and that therefore 
+85 &lt; 4. 10-16, 
+17. Fix IX&gt; 1. Take X1 &gt;VIX, and define 86 &lt; 4' 10-32&#8226; 
+2 IX+ Xn IX -Xn 
+Xn+i=l-L =xn+l+ &#8226; 
+(a) Prove that X1 &gt; X3 &gt; Xs &gt; &#183; &#183; &#183; . 
+(b) Prove that X2 &lt; X4 &lt; x6 &lt; &#183; &#183; &#183; . 
+(c) Prove that lim Xn = VIX. , Xn Xn 
+(d) Compare the rapidity of conve1&#183;gence of this process with the one described 
+i11 Exercise 16. 
+18. Replace the recursion formula of Exercise 16 by 
+p-1 +IX -p+t Xn+1 = --Xn -Xn p p 
+where p is a fixed positive integer, and describe the behavior of the resulting 
+sequences {xn}, 
+19. Associate to each sequence a= {1Xn}, in which IXn is O or 2, the real number 
+oo IXn 
+x(a) = L 3n. 
+n=l 
+Prove that the set of all x(a) is precisely the Cantor set described in Sec. 2.44. 8.2 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+20. Suppose {Pn} is a Cauchy sequence in a metric space X, and some subsequence 
+{p,.,} converges to a point p e X. Prove that the full sequence {Pn} converges top. 
+21. Prove the following analogue of Theorem 3.lO(b): If {En} is a sequence of closed 
+nonempty and bounded sets in a complete metric space X, if En =&gt; E,. + 1, and if 
+lim diam En = 0, 
+n&#10132;oo 
+then n f En consists of exactly one point. 
+22. Suppose Xis a nonempty complete metric space, and {G,.} is a sequence of 
+dense open subsets of X. Prove Baire's theorem, namely, that n f Gn is not 
+empty. (In fact, it 1s dense in X.) Hint: Find a shrinking sequence of neighbor~ 
+hoods E,. such that&#163;,. c G,., and apply Exercise 21. 
+23. Suppose {pn} and {qn} are Cauchy sequences in a metric space X. Show that the 
+sequence {d(Pn, qn)} converges. Hint: For any m, n, 
+d(pn, qn) ~ d(pn, Pm) + d(Pm, qm) + d(qm , qn); 
+it follows that 
+is small if m and n are large. 
+24. Let X be a metric space. 
+(a) Call two Cauchy sequences {Pn}, {qn} in X equivalent if 
+lim d(pn, q,.) = 0. 
+n &#10132; oo 
+Prove that this is an equivalence relation. 
+(b) Let X* be the set of all equivalence classes so obtained. If Pe x&#8226;, Q e X*, 
+{p,,} e P, {qn} e Q, define 
+!l.(P, Q) = lim d(pn, qn); 
+n&#10132;OO 
+by Exercise 23, this limit exists. Show that the number !l.(P, Q) is unchanged if 
+{Pn} and {qn} are replaced by equivalent sequences, and hence that fl. is a distance 
+function in X*. 
+(c) Prove that the resulting metric space X* is complete. 
+(d) For each p e X, there is a Cauchy sequence all of whose terms are p; let Pp 
+be the element of X* which contains this sequence. Prove that 
+!l.(Pp, P4) = d(p, q) 
+for all p, q e X. In other words, the mapping &lt;p defined by &lt;p(p) =PP is an isometry 
+(i.e., a distance-preserving mapping) of X into X*. 
+(e) Prove that &lt;p(X) is dense in X*, and that &lt;p(X) = X* if Xis complete. By (d), 
+we may identify X and &lt;p(X) and thus regard X as embedded in the complete 
+metric space X*. We call X* the completion of X. 
+25. Let X be the metric space whose points are the rational numbers, with the metric 
+d(x, y) =Ix -y I, What is the completion of this space? (Compare Exercise 24.) CONTINUITY 
+The function concept and some of the related terminology were introduced in 
+Definitions 2.1 and 2.2. Although we shall (in later chapters) be mainly interested 
+in real and complex functions (i.e., in functions whose values are real or complex 
+numbers) we shall also discuss vector-valued functions (i.e., functions with 
+values in Rk) and functions with values in an arbitrary metric space. The theo&#173;
+rems we shall discuss in this general setting would not become any easier if we 
+restricted ourselves to real functions, for instance, and it actually simplifies and 
+clarifies the picture to discard unnecessary hypotheses and to state and prove 
+theorems in an appropriately general context. 
+The domains of definition of our functions will also be metric spaces, 
+suitably specialized in various instances. 
+LIMITS OF FUNCTIONS 
+4.1 Definition Let X and Y be metric spaces; suppose E c X, f maps E into 
+Y, and p is a limit point of E. We write f(x) ~ q as x ~ p, or 
+(1) lim/(x) = q 
+x&#10132;p </description></item></channel></rss>
