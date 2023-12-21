@@ -1,136 +1,407 @@
-<rss version="2.0">
-<channel><item><title>5 Taylor's Theorem</title><num_pages>2</num_pages><link>/app/basics/rudin/chap5/5_Taylor's_Theorem.pdf</link><description>100 PRINCIPLES OF MATHEMATICAL ANALYSIS 
-(see Exercise S for terminology). (Uniqueness follows from Exercise 4.) Hint: For 
-each p e X and each positive integer n, let Vn(p) be the set of all q e E with 
-d(p, q) &lt; l/n. Use Exercise 9 to show that the intersection of the closures of the 
-sets /(V1(p)), /(V2(p)), ... , consists of a single point, say g(p), of R1. Prove that 
-the function g so defined on X is the desired extension off. 
-Could the range space R1 be replaced by Rk? By any compact metric space? 
-By any complete metric space? By any metric space? 
-14. Let I = [O, 1] be the closed unit interval. Suppose/ is a continuous mapping of / 
-into I. Prove that /(x) = x for at least one x e J. 
-15. Call a mapping of X into Y open if/( V) is an open set in Y whenever Vis an open 
-set in X. 
-Prove that every continuous open mapping of R1 into R1 is monotonic. 
-16. Let [x] denote the largest integer contained in x, that is, [x] is the integer such 
-that x -l &lt; [x]:;;; x; and let (x) = x -[x] denote the fractional part of x. What 
-discontinuities do the functions [x] and (x) have? 
-17. Let/be a real function defined on (a, b). Prove that the set of points at which/ 
-has a simple discontinuity is at most countable. Hint: I ... et E be the set on which 
-f(x-) &lt;f(x+ ). With each point x of E, associate a triple (p, q, r) of rational 
-numbers such that 
-(a) f(x-) &lt; p &lt;f(x+ ), 
-(b) a&lt; q &lt; t &lt; x implies/(t) &lt;p, 
-(c) x &lt; t &lt; r &lt; b implies/(t) &gt; p. 
-The set of all such triples is countable. Show that each triple is associated with at 
-most one point of E. Deal similarly with the other possible types of simple dis-
-&#8226; &#8226; &#8226; cont1nu1t1es. 
-18. Every rational x can be written in the form x = m/n, where n &gt; 0, and m and n are 
-integers without any common divisors. When x = 0, we take n = l. Consider the 
-function f defined on R1 by 
-0 
-f(x) = 1 -n (x irrational), 
-m x=-. n 
-Prove that f is continuous at every irrational point, and that f l1as a simple discon&#173;
-tinuity at every rational point. 
-19. Suppose / is a real function with domain R1 which has the intermediate value 
-property: If /(a)&lt; c &lt;f(b), then/(x) = c for some x between a and b. 
-Suppose also, for every rational r, that the set of all x with/(x) = r is closed. 
-Prove that f is continuous. 
-Hint: If Xn &#10132; Xo but f(xn) &gt; r &gt; f(xo) for some r and all n, then f(tn) = r 
-for some In between Xo and x,.; thus tn &#10132; Xo. Find a contradiction. (N. J. Fine, 
-Amer. Math. Monthly, vol. 73, 1966, p. 782.) CONTINUITY 101 
-20. If Eis a nonempty subset of a metric space X, define the distance from x e X to E 
-by 
-PE(x) = inf d(x, z). 
-:reE 
-(a) Prove that PE(x) = 0 if and only if x e E. 
-(b) Prove that PE is a uniformly continuous function on X, by showing that 
-I PE(x) -PE(Y) I =:;: d(x, y) 
-for all x e X, ye X. 
-Hint: pE(x) =:;: d(x, z) =:;: d(x, y) + d(y, z), so that 
-PE(x) =:;: d(x, y) + pE(y). 
-21. Suppose K and Fare disjoint sets in a metric space X, K is compact, Fis closed. 
-Prove that there exists 8 &gt; 0 such that d(p, q) &gt; 8 if p e K, q e F. Hint: PF is a 
-continuous positive function on K. 
-Show that the conclusion may fail for two disjoint closed sets if neither is 
-compact. 
-22. Let A and B be disjoint nonempty closed sets in a metric space X, and define 
-p,.(p) 
-f(p) = p,.(p) + P s(p) (p E X). 
-Show that/ is a continuous function on X whose range lies in [O, 1], that/(p) = 0 
-precisely on A and/(p) = 1 precisely on B. This establishes a converse of Exercise 
-3: Every closed set A c X is Z(f) for some continuous real / on X. Setting 
-V = J-1([0, &#189;)), w = 1-1((&#189;, 1]), 
-show that V and Ware open and disjoint, and that A c V, B c W. (Thus pairs of 
-disjoint closed sets in a metric space can be covered by pairs of disjoint open sets. 
-This property of metric spaces is called normality.) 
-23. A real-valued function f defined in (a, b) is said to be convex if 
-f( Ax+ (1 -,\)y) =:;: ,\f(x) + (1 -,\)/(y) 
-whenever a &lt; x &lt; b, a &lt; y &lt; b, 0 &lt; ,\ &lt; 1. Prove that every convex function is 
-continuous. Prove that every increasing convex function of a convex function is 
-convex. (For example, if/ is convex, so is e1.) 
-If /is convex in (a, b) and if a&lt; s &lt; t &lt; u &lt; b, show that 
-f_(t_) _-_f(_s) f(u) -f(s) &lt; f(u) -f(t) =:;:---_---. t-s u-s u-t 
-24. Assume that f is a continuous real function defined in (a, b) such that 
-I x + Y =:;: f(x) + f(y) 
-2 2 
-for all x, ye (a, b). Prove that/is convex. </description></item><item><title>6 Differentiation of Vector-valued Functions</title><num_pages>4</num_pages><link>/app/basics/rudin/chap5/6_Differentiation_of_Vector-valued_Functions.pdf</link><description>CONTINUITY 101 
-20. If Eis a nonempty subset of a metric space X, define the distance from x e X to E 
-by 
-PE(x) = inf d(x, z). 
-:reE 
-(a) Prove that PE(x) = 0 if and only if x e E. 
-(b) Prove that PE is a uniformly continuous function on X, by showing that 
-I PE(x) -PE(Y) I =:;: d(x, y) 
-for all x e X, ye X. 
-Hint: pE(x) =:;: d(x, z) =:;: d(x, y) + d(y, z), so that 
-PE(x) =:;: d(x, y) + pE(y). 
-21. Suppose K and Fare disjoint sets in a metric space X, K is compact, Fis closed. 
-Prove that there exists 8 &gt; 0 such that d(p, q) &gt; 8 if p e K, q e F. Hint: PF is a 
-continuous positive function on K. 
-Show that the conclusion may fail for two disjoint closed sets if neither is 
-compact. 
-22. Let A and B be disjoint nonempty closed sets in a metric space X, and define 
-p,.(p) 
-f(p) = p,.(p) + P s(p) (p E X). 
-Show that/ is a continuous function on X whose range lies in [O, 1], that/(p) = 0 
-precisely on A and/(p) = 1 precisely on B. This establishes a converse of Exercise 
-3: Every closed set A c X is Z(f) for some continuous real / on X. Setting 
-V = J-1([0, &#189;)), w = 1-1((&#189;, 1]), 
-show that V and Ware open and disjoint, and that A c V, B c W. (Thus pairs of 
-disjoint closed sets in a metric space can be covered by pairs of disjoint open sets. 
-This property of metric spaces is called normality.) 
-23. A real-valued function f defined in (a, b) is said to be convex if 
-f( Ax+ (1 -,\)y) =:;: ,\f(x) + (1 -,\)/(y) 
-whenever a &lt; x &lt; b, a &lt; y &lt; b, 0 &lt; ,\ &lt; 1. Prove that every convex function is 
-continuous. Prove that every increasing convex function of a convex function is 
-convex. (For example, if/ is convex, so is e1.) 
-If /is convex in (a, b) and if a&lt; s &lt; t &lt; u &lt; b, show that 
-f_(t_) _-_f(_s) f(u) -f(s) &lt; f(u) -f(t) =:;:---_---. t-s u-s u-t 
-24. Assume that f is a continuous real function defined in (a, b) such that 
-I x + Y =:;: f(x) + f(y) 
-2 2 
-for all x, ye (a, b). Prove that/is convex. 102 PRINCIPLES OF MATHEMATICAL ANALYSIS 
-25. If Ac Rt and B c Rt, define A+ B to be the set of all sums x + y with x e A, 
-yeB. 
-(a) If K is compact and C is closed in Rt, prove that K + C is closed. 
-Hint: Take z &#162; K + C, put F= z-C, the set of all z-y with ye C. Then 
-K and Fare disjoint. Choose 8 as in Exercise 21. Show that the open ball with 
-center z and radius 8 does not intersect K + C. 
-(b) Let oc be an irrational real number. Let C1 be the set of all integers, let C2 be 
-the set of all noc with n E C1, Show that C1 and C2 are closed subsets of R1 whose 
-sum CJ + C 2 is not closed, by showing that C 1 + C 2 is a countable dense subset 
-of R1&#8226; 
-26. Suppose X, Y, Z are metric spaces, and Y is compact. Let f map X into Y, let 
-g be a continuous one-to-one mapping of Y into Z, and put h(x) = g(/'(x)) for 
-XE X. 
-Prove that f is uniformly continuous if h is uniformly continuous. 
-Hint: g-1 has compact domain g( Y), and f(x) = g-1(h(x)). 
-Prove also that f is continuous if h is continuous. 
-Show (by modifying Example 4.21, or by finding a different example) that 
-the compactness of Y cannot be omitted from the hypotheses, even when X and 
-Z are compact. DIFFERENTIATION 
+<channel><item><title>5 Taylor's Theorem</title><num_pages>2</num_pages><link>/app/basics/rudin/chap5/5_Taylor's_Theorem.pdf</link><description>110 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+(20) 
+(21) 
+(22) Next, suppose (15) holds. Keeping y fixed in (18), we can choose 
+a point c1 e (a, y) such that g(x) &gt; g(y) and g(x) &gt; 0 if a&lt; x &lt; c1. Multi&#173;
+plying (18) by [g(x) -g(y)]/g(x), we obtain 
+f(x) &lt; r _ rg(y) +f(y) ( ) a&lt; X &lt; C1 . g(x) g(x) g(x) 
+If we let x &gt; a in (20), (15) shows that there is a point c2 e (a, c1) 
+such that 
+f(x) 
+g(x) &lt; q 
+Summing up, (19) and (21) show that for any q, subject only to the 
+condition A &lt; q, there is a point c2 such thatf(x)/g(x) &lt; q if a&lt; x &lt; c2. 
+In the same manner, if -oo &lt; A ~ + oo, and p is chosen so that 
+p &lt; A, we can find a point c3 such that 
+f(x) 
+p &lt; -(a &lt; X &lt; C3), g(x) 
+and (16) follows from these two statements. 
+DERIVATIVES OF HIGHER ORDER 
+5.14 Definition If/has a derivative/' on an interval, and if/' is itself differen&#173;
+tiable, we denote the derivative off' by f '' and call/'' the second derivative off 
+Continuing in this manner, we obtain functions 
+f,f',f'',/(3&gt;, &#183; &#183; &#183; ,f(n), 
+each of which is the derivative of the preceding one. J&lt;n&gt; is called the nth deriva&#173;
+tive, or the derivative of order n, off 
+In order for J&lt;n&gt; (x) to exist at a point x,f&lt;n-l) (t) must exist in a neighbor&#173;
+hood of x ( or in a one-sided neighborhood, if x is an endpoint of the interval 
+on which f is defined), and J&lt;n -i &gt; must be differentiable at x. Since J&lt;n-i &gt; must 
+exist in a neighborhood of x,J&lt;n-2&gt; must be differentiable in that neighborhood. 
+TAYLOR'S THEOREM 
+-5.15 Theorem Suppose f is a real function on [a, b ], n is a positive integer, 
+J&lt;n-l) is continuous on [a, b],f&lt;n&gt;(t) exists for every t e (a, b). Let tx, P be distinct 
+points of [a, b ], and define 
+n-1/(k)(tx) 
+(23) P(t) = L --(t -tx)k. 
+k=O k! DIFFERENTIATION 111 
+Then there exists a point x between IX and /3 such that 
+(24) n. 
+For n = 1, this is just the mean value theorem. In general, the theorem 
+shows that f can be approximated by a polynomial of degree n -1, and that 
+(24) allows us to estimate the error, if we know bounds on lf&lt;n&gt;(x) I&#8226; 
+(25) 
+(26) 
+(27) Proof Let M be the number defined by 
+f(/3) = P(/3) + M(/3 -1X)n 
+and put 
+g(t) =f(t) -P(t) -M(t -1X)n (a~ t ~ b). 
+We have to show that n !M = f&lt;n&gt;(x) for some x between IX and /3. By 
+(23) and (26), 
+(a&lt; t &lt; b). 
+Hence the proof will be complete if we can show that g&lt;n&gt;(x) = 0 for some 
+x between IX and f3. 
+Since p&lt;k&gt;(IX) = [&lt;k&gt;(IX) fork= 0, ... , n -1, we have 
+(28) g(IX) = g'(IX) = ''' = g&lt;n-l)(IX) = 0. 
+Our choice of M shows that g(/3) = 0, so that g'(x1) = 0 for some x1 
+between IX and /3, by the mean value theorem. Since g1(1X) = 0, we conclude 
+similarly that g''(x2) = 0 for some x2 between IX and x1. After n steps we 
+arrive at the conclusion that g&lt;n&gt;(xn) = 0 for some Xn bet ween IX and Xn _ 1, 
+that is, between IX and /3. 
+DIFFERENTIATION OF VECTOR-VALUED FUNCTIONS 
+5.16 Remarks Definition 5.1 applies without any change to complex functions 
+f defined on [a, b], and Theorems 5.2 and 5.3, as well as their proofs, remain 
+valid. If /1 and/2 are the real and imaginary parts of I, that is, if 
+f(t) = li(t) + if2(t) 
+for a~ t ~ b, where/ 1(t) and/2(t) are real, then we clearly have 
+(29) f'(x) = f{(x) + ifi(x); 
+also, f is differentiable at x if and only if both /1 and /2 are differentiable at x. </description></item><item><title>6 Differentiation of Vector-valued Functions</title><num_pages>4</num_pages><link>/app/basics/rudin/chap5/6_Differentiation_of_Vector-valued_Functions.pdf</link><description>DIFFERENTIATION 111 
+Then there exists a point x between IX and /3 such that 
+(24) n. 
+For n = 1, this is just the mean value theorem. In general, the theorem 
+shows that f can be approximated by a polynomial of degree n -1, and that 
+(24) allows us to estimate the error, if we know bounds on lf&lt;n&gt;(x) I&#8226; 
+(25) 
+(26) 
+(27) Proof Let M be the number defined by 
+f(/3) = P(/3) + M(/3 -1X)n 
+and put 
+g(t) =f(t) -P(t) -M(t -1X)n (a~ t ~ b). 
+We have to show that n !M = f&lt;n&gt;(x) for some x between IX and /3. By 
+(23) and (26), 
+(a&lt; t &lt; b). 
+Hence the proof will be complete if we can show that g&lt;n&gt;(x) = 0 for some 
+x between IX and f3. 
+Since p&lt;k&gt;(IX) = [&lt;k&gt;(IX) fork= 0, ... , n -1, we have 
+(28) g(IX) = g'(IX) = ''' = g&lt;n-l)(IX) = 0. 
+Our choice of M shows that g(/3) = 0, so that g'(x1) = 0 for some x1 
+between IX and /3, by the mean value theorem. Since g1(1X) = 0, we conclude 
+similarly that g''(x2) = 0 for some x2 between IX and x1. After n steps we 
+arrive at the conclusion that g&lt;n&gt;(xn) = 0 for some Xn bet ween IX and Xn _ 1, 
+that is, between IX and /3. 
+DIFFERENTIATION OF VECTOR-VALUED FUNCTIONS 
+5.16 Remarks Definition 5.1 applies without any change to complex functions 
+f defined on [a, b], and Theorems 5.2 and 5.3, as well as their proofs, remain 
+valid. If /1 and/2 are the real and imaginary parts of I, that is, if 
+f(t) = li(t) + if2(t) 
+for a~ t ~ b, where/ 1(t) and/2(t) are real, then we clearly have 
+(29) f'(x) = f{(x) + ifi(x); 
+also, f is differentiable at x if and only if both /1 and /2 are differentiable at x. 112 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+Passing to vector-valued functions in general, i.e., to functions f which 
+map [a, b] into some Rk, we may still apply Definition 5.1 to define f'(x). The 
+term &lt;p(t) in (1) is now, for each t, a point in Rk, and the limit in (2) is taken with 
+respect to the norm of Rk. In other words, f'(x) is that point of Rk (if there is 
+one) for which 
+(30) lim f(t) -f(x) -f'(x) = 0, 
+t&#10132;x t -X 
+and f' is again a function with values in Rk. 
+If /1, &#8226;.. , fk are the components off, as defined in Theorem 4.10, then 
+(31) f' = (/{, ... ,/;), 
+and f is differentiable at a point x if and only if each of the functions /1, &#8226;&#8226;&#8226; , h 
+is differentiable at x. 
+Theorem 5.2 is true in this context as well, and so is Theorem 5.3(a) and 
+{b), if Jg is replaced by the inner product f &#183; g (see Definition 4.3). 
+When we turn to the mean value theorem, however, and to one of its 
+consequences, namely, L'Hospital's rule, the situation changes. The next two 
+examples will show that each of these. results fails to be true for complex-valued 
+functions. 
+5.17 Example Define, for real x, 
+(32) f(x) = eix = cos x + i sin x. 
+{The last expression may be taken as the definition of the complex exponential 
+eix; see Chap. 8 for a full discussion of these functions.) Then 
+(33) 
+but 
+(34) f(2n) -/(0) = 1 - 1 = 0, 
+f'(x) = ieix, 
+so that 1/'(x) I = 1 for all real x. 
+Thus Theorem 5.10 fails to hold in this case. 
+5.18 Example On the segment (0, 1), define/(x) = x and 
+(35) g(x) = x + x2eilx2
+&#8226; 
+Since I eit I = 1 for all real t, we see that 
+(36) lim f(x) = 1. 
+x&#10132;O g(x) Next, 
+(37) 
+so that 
+(38) 
+Hence 
+(39) 
+and so 
+(40) g'(x) = 1 + 2 2i i/x2 x--e 
+X (0 &lt; X &lt; 1), 
+lu'(x) I ~ 2i 2x-&#173;x 2 -1~--1. 
+X 
+/'(x) 1 X =--~--g'(x) lu'(x) I 2 -x 
+lim f'(x) = 0. 
+x&#10132;o g'(x) DIFFERENTIATION 113 
+By (36) and ( 40), L'Hospital's rule fails in this case. Note also that g'(x) &#165;: 0 
+on (0, 1 ), by (38). 
+However, there is a consequence of the mean value theorem which, for 
+purposes of applications, is almost as useful as Theorem 5.10, and which re&#173;
+mains true for vector-valued functions: From Theorem 5.10 it follows that 
+(41) IJ(b) -f(a) I ~ (b -a) sup 1/'(x) 1-
+a&lt;x&lt;b 
+5.19 Theorem Suppose f is a continuous mapping of [a, b] into Rk and f is 
+differentiable in (a, b). Then there exists x E (a, b) such that 
+jf(b) -f(a)I ~ (b -a)lf'(x)I. 
+Proof1 Putz = f(b) -f(a), and define 
+&lt;p( t ) = z &#8226; f( t) ( a ~ t ~ b). 
+Then &lt;p is a real-valued continuous function on [a, b] which is differentia&#173;
+ble in (a, b). The mean value theorem shows therefore that 
+&lt;p(b) -&lt;p(a) = (b -a)&lt;p'(x) = (b &#183;-a)z &#183; f'(x) 
+for some x E (a, b). On the other hand, 
+&lt;p( b) -&lt;p( a) = z &#183; f( b) -z &#183; f( a) = z &#183; z = I z I 2&#8226; 
+The Schwarz inequality now gives 
+I z I 2 = ( b -a) I z &#183; f' ( x) I ~ ( b -a) I z I I f' ( x) I . 
+Hence lzl ~ (b -a)lf'(x)I, which is the desired conclusion. 
+1 V. P. Havin translated the second edition of this book into Russian and added this 
+proof to the original one. 114 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+EXERCISES 
+1. Let/ be defined for all real x, and suppose that 
+lf(x) -f(y) I ~ (x -Y)2 
+for all real x and y. Prove that/ is constant. 
+2. Suppose/'(x) &gt; 0 in (a, b). Prove that/is strictly increasing in (a, b), and let g be 
+its inverse function. Prove that g is differentiable, and that 
+(a&lt; x &lt; b). 
+3. Suppose g is a real function on R1, with bounded derivative (say I g' I ~ M). Fix 
+e &gt; 0, and define/(x) = x + eg(x). Prove that/is one-to-one if e is small enough. 
+(A set of admissible values of e can be determined which depends only on M.) 
+4. If 
+Co+ C1 +&#183;&#183;&#183;+ Cn-1 + Cn =0, 
+2 n n+l 
+where Co, ... , Cn are real constants, prove that the equation 
+Co+ Cix + &#183; &#183; &#183; + Cn-ixn-i + Cnxn = 0 
+has at least one real root between O and 1. 
+5. Suppose/is defined and differentiable for every x &gt; 0, and/'(x) &#9658; 0 as x &#9658; + oo. 
+Put g(x) =f(x + 1)-/(x). Prove that g(x) &#9658; 0 as x &#9658; + oo. 
+6. Suppose 
+(a) f is continuous for x ~ 0, 
+(b) f'(x) exists for x &gt; 0, 
+(c) /'(O) = 0, 
+(d) f' is monotonically increasing. 
+Put 
+g(x) =f(x) 
+X 
+and prove that g is monotonically increasing. (x &gt;0) 
+7. Suppose /'(x), g'(x) exist, g '(x) -=I= 0, and /(x) = g(x) = 0. Prove that 
+lim /(t) =/'(x). 
+r&#10132;x g(t) g'(x) 
+{This holds also for complex functions.) 
+8. Suppose/' is continuous on [a, b] and e &gt; 0. Prove that there exists 8 &gt; 0 such 
+that 
+f(t) -f(x) _ f'(x) &lt; 8 t-x </description></item><item><title>4 Derivatives of Higher Order</title><num_pages>1</num_pages><link>/app/basics/rudin/chap5/4_Derivatives_of_Higher_Order.pdf</link><description>110 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+(20) 
+(21) 
+(22) Next, suppose (15) holds. Keeping y fixed in (18), we can choose 
+a point c1 e (a, y) such that g(x) &gt; g(y) and g(x) &gt; 0 if a&lt; x &lt; c1. Multi&#173;
+plying (18) by [g(x) -g(y)]/g(x), we obtain 
+f(x) &lt; r _ rg(y) +f(y) ( ) a&lt; X &lt; C1 . g(x) g(x) g(x) 
+If we let x &gt; a in (20), (15) shows that there is a point c2 e (a, c1) 
+such that 
+f(x) 
+g(x) &lt; q 
+Summing up, (19) and (21) show that for any q, subject only to the 
+condition A &lt; q, there is a point c2 such thatf(x)/g(x) &lt; q if a&lt; x &lt; c2. 
+In the same manner, if -oo &lt; A ~ + oo, and p is chosen so that 
+p &lt; A, we can find a point c3 such that 
+f(x) 
+p &lt; -(a &lt; X &lt; C3), g(x) 
+and (16) follows from these two statements. 
+DERIVATIVES OF HIGHER ORDER 
+5.14 Definition If/has a derivative/' on an interval, and if/' is itself differen&#173;
+tiable, we denote the derivative off' by f '' and call/'' the second derivative off 
+Continuing in this manner, we obtain functions 
+f,f',f'',/(3&gt;, &#183; &#183; &#183; ,f(n), 
+each of which is the derivative of the preceding one. J&lt;n&gt; is called the nth deriva&#173;
+tive, or the derivative of order n, off 
+In order for J&lt;n&gt; (x) to exist at a point x,f&lt;n-l) (t) must exist in a neighbor&#173;
+hood of x ( or in a one-sided neighborhood, if x is an endpoint of the interval 
+on which f is defined), and J&lt;n -i &gt; must be differentiable at x. Since J&lt;n-i &gt; must 
+exist in a neighborhood of x,J&lt;n-2&gt; must be differentiable in that neighborhood. 
+TAYLOR'S THEOREM 
+-5.15 Theorem Suppose f is a real function on [a, b ], n is a positive integer, 
+J&lt;n-l) is continuous on [a, b],f&lt;n&gt;(t) exists for every t e (a, b). Let tx, P be distinct 
+points of [a, b ], and define 
+n-1/(k)(tx) 
+(23) P(t) = L --(t -tx)k. 
+k=O k! </description></item><item><title>7 Exercises</title><num_pages>1</num_pages><link>/app/basics/rudin/chap5/7_Exercises.pdf</link><description>114 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+EXERCISES 
+1. Let/ be defined for all real x, and suppose that 
+lf(x) -f(y) I ~ (x -Y)2 
+for all real x and y. Prove that/ is constant. 
+2. Suppose/'(x) &gt; 0 in (a, b). Prove that/is strictly increasing in (a, b), and let g be 
+its inverse function. Prove that g is differentiable, and that 
+(a&lt; x &lt; b). 
+3. Suppose g is a real function on R1, with bounded derivative (say I g' I ~ M). Fix 
+e &gt; 0, and define/(x) = x + eg(x). Prove that/is one-to-one if e is small enough. 
+(A set of admissible values of e can be determined which depends only on M.) 
+4. If 
+Co+ C1 +&#183;&#183;&#183;+ Cn-1 + Cn =0, 
+2 n n+l 
+where Co, ... , Cn are real constants, prove that the equation 
+Co+ Cix + &#183; &#183; &#183; + Cn-ixn-i + Cnxn = 0 
+has at least one real root between O and 1. 
+5. Suppose/is defined and differentiable for every x &gt; 0, and/'(x) &#9658; 0 as x &#9658; + oo. 
+Put g(x) =f(x + 1)-/(x). Prove that g(x) &#9658; 0 as x &#9658; + oo. 
+6. Suppose 
+(a) f is continuous for x ~ 0, 
+(b) f'(x) exists for x &gt; 0, 
+(c) /'(O) = 0, 
+(d) f' is monotonically increasing. 
+Put 
+g(x) =f(x) 
+X 
+and prove that g is monotonically increasing. (x &gt;0) 
+7. Suppose /'(x), g'(x) exist, g '(x) -=I= 0, and /(x) = g(x) = 0. Prove that 
+lim /(t) =/'(x). 
+r&#10132;x g(t) g'(x) 
+{This holds also for complex functions.) 
+8. Suppose/' is continuous on [a, b] and e &gt; 0. Prove that there exists 8 &gt; 0 such 
+that 
+f(t) -f(x) _ f'(x) &lt; 8 t-x </description></item><item><title>3 L'Hopital's Rule</title><num_pages>2</num_pages><link>/app/basics/rudin/chap5/3_L'Hopital's_Rule.pdf</link><description>DIFFERENTIATION 109 
+Corollary If f is differentiable on [a, b ], then f' cannot /1ave any simple dis&#173;
+continuities on [a, b ]. 
+But/' may very well have discontinuities of the second kind. 
+L'HOSPITAL'S RULE 
+The following theorem is frequently useful in the evaluation of limits. 
+5.13 Theorem Suppose/ and g are real and differentiable in (a, b), and g'(x) =I= 0 
+for all x e (a, b), where -oo ~a&lt; b ~ + oo. Suppose 
+(13) 
+If 
+(14) 
+or if 
+(15) 
+then 
+(16) f'(x) 
+g'(x) -+&gt; A as x &gt; a. 
+f (x) &gt; 0 and g(x) &gt; 0 as x &gt; a, 
+g(x) &gt; + oo as x &gt; a, 
+f_(x_) -+ A as x &gt; a. 
+g(x) 
+The analogous statement is of course also true if x &gt; b, or if g(x) -+ -oo 
+in (15). Let us note that we now use the limit concept in the extended sense of 
+Definition 4.33. 
+(17) 
+(18) 
+(19) Proof We first consider the case in which -oo ~ A &lt; + oo. Choose a 
+real number q such that A &lt; q, and then choose r such that A &lt; r &lt; q. 
+By (13) there is a point c e (a, b) such that a&lt; x &lt; c implies 
+f'(x) 
+g'(x) &lt; r. 
+If a&lt; x &lt; y &lt; c, then Theorem 5.9 shows that there is a point t e (x, y) 
+such that 
+f(x) -f(y) f '(t) ----=-&lt;r. g(x) -g(y) g'(t) 
+Suppose (14) holds. Letting x-+ a in (18), we see that 
+f(y) &lt; &lt; g(y) -r q (a&lt; y &lt; c). 110 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+(20) 
+(21) 
+(22) Next, suppose (15) holds. Keeping y fixed in (18), we can choose 
+a point c1 e (a, y) such that g(x) &gt; g(y) and g(x) &gt; 0 if a&lt; x &lt; c1. Multi&#173;
+plying (18) by [g(x) -g(y)]/g(x), we obtain 
+f(x) &lt; r _ rg(y) +f(y) ( ) a&lt; X &lt; C1 . g(x) g(x) g(x) 
+If we let x &gt; a in (20), (15) shows that there is a point c2 e (a, c1) 
+such that 
+f(x) 
+g(x) &lt; q 
+Summing up, (19) and (21) show that for any q, subject only to the 
+condition A &lt; q, there is a point c2 such thatf(x)/g(x) &lt; q if a&lt; x &lt; c2. 
+In the same manner, if -oo &lt; A ~ + oo, and p is chosen so that 
+p &lt; A, we can find a point c3 such that 
+f(x) 
+p &lt; -(a &lt; X &lt; C3), g(x) 
+and (16) follows from these two statements. 
+DERIVATIVES OF HIGHER ORDER 
+5.14 Definition If/has a derivative/' on an interval, and if/' is itself differen&#173;
+tiable, we denote the derivative off' by f '' and call/'' the second derivative off 
+Continuing in this manner, we obtain functions 
+f,f',f'',/(3&gt;, &#183; &#183; &#183; ,f(n), 
+each of which is the derivative of the preceding one. J&lt;n&gt; is called the nth deriva&#173;
+tive, or the derivative of order n, off 
+In order for J&lt;n&gt; (x) to exist at a point x,f&lt;n-l) (t) must exist in a neighbor&#173;
+hood of x ( or in a one-sided neighborhood, if x is an endpoint of the interval 
+on which f is defined), and J&lt;n -i &gt; must be differentiable at x. Since J&lt;n-i &gt; must 
+exist in a neighborhood of x,J&lt;n-2&gt; must be differentiable in that neighborhood. 
+TAYLOR'S THEOREM 
+-5.15 Theorem Suppose f is a real function on [a, b ], n is a positive integer, 
+J&lt;n-l) is continuous on [a, b],f&lt;n&gt;(t) exists for every t e (a, b). Let tx, P be distinct 
+points of [a, b ], and define 
+n-1/(k)(tx) 
+(23) P(t) = L --(t -tx)k. 
+k=O k! </description></item><item><title>2 The Continuity of Derivatives</title><num_pages>2</num_pages><link>/app/basics/rudin/chap5/2_The_Continuity_of_Derivatives.pdf</link><description>108 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+(Theorem 4.16). By (12), x e (a, b), and Theorem 5.8 shows that h'(x) = 0. 
+If h(t) &lt; h(a) for some t e (a, b), the same argument applies if we choose 
+for x a point on [a, b] where h attains its minimum. 
+This theorem is often called a generalized mean value theorem; the following 
+special case is usually referred to as ''the'' mean value theorem: 
+5.10 Theorem If f is a real continuous function on [a, b] which is differentiable 
+in (a, b), then there is a point x e (a, b) at which 
+f(b) -f(a) = (b -a)f'(x). 
+Proof Take g(x) = x in Theorem 5.9. 
+5.11 Theorem Suppose f is dijj'erentiable in (a, b). 
+(a) Jff'(x) ~ Ofor all x e (a, b), then/ is monotonically increasing. 
+(b) Jff'(x) = Ofor all x e (a, b), then/ is constant. 
+(c) If f'(x) ~ 0 for all x e (a, b), then f is monotonically decreasing. 
+Proof All conclusions can be read off from the equation 
+f(x2) -f(x1) = (x2 -X1)f'(x), 
+which is valid, for each pair of numbers x1, x2 in (a, b), for some x between 
+x1 and x2&#8226; 
+THE CONTINUITY OF DERir.ATIVES 
+We have already seen [Example 5.6(b)] that a function/may have a derivative 
+f' which exists at every point, but is discontinuous at some point. However, not 
+every function is a derivative. In particular, derivatives which exist at every 
+point of an interval have one important property in common with functions 
+which are continuous on an interval: Intermediate values are assumed ( compare 
+Theorem 4.23). The precise statement follows. 
+5.12 Theorem Suppose f is a real differentiable function on [a, b] and suppose 
+f'(a) &lt; l &lt;f'(b). Then there is a point x e (a, b) such that f'(x) = l. 
+A similar result holds of course if f'(a) &gt; f'(b). 
+Proof Put g(t) = f(t) -lt. Then g'(a) &lt; 0, so that g(t1) &lt; g(a) for some 
+t1 e (a, b), and g'(b) &gt; 0, so that g(t2) &lt; g(b) for some t2 e (a, b). Hence 
+g attains its minimum on [a, b] (Theorem 4.16) at some point x such that 
+a &lt; x &lt; b. By Theorem 5.8, g'(x) = 0. Hence f'(x) = l. DIFFERENTIATION 109 
+Corollary If f is differentiable on [a, b ], then f' cannot /1ave any simple dis&#173;
+continuities on [a, b ]. 
+But/' may very well have discontinuities of the second kind. 
+L'HOSPITAL'S RULE 
+The following theorem is frequently useful in the evaluation of limits. 
+5.13 Theorem Suppose/ and g are real and differentiable in (a, b), and g'(x) =I= 0 
+for all x e (a, b), where -oo ~a&lt; b ~ + oo. Suppose 
+(13) 
+If 
+(14) 
+or if 
+(15) 
+then 
+(16) f'(x) 
+g'(x) -+&gt; A as x &gt; a. 
+f (x) &gt; 0 and g(x) &gt; 0 as x &gt; a, 
+g(x) &gt; + oo as x &gt; a, 
+f_(x_) -+ A as x &gt; a. 
+g(x) 
+The analogous statement is of course also true if x &gt; b, or if g(x) -+ -oo 
+in (15). Let us note that we now use the limit concept in the extended sense of 
+Definition 4.33. 
+(17) 
+(18) 
+(19) Proof We first consider the case in which -oo ~ A &lt; + oo. Choose a 
+real number q such that A &lt; q, and then choose r such that A &lt; r &lt; q. 
+By (13) there is a point c e (a, b) such that a&lt; x &lt; c implies 
+f'(x) 
+g'(x) &lt; r. 
+If a&lt; x &lt; y &lt; c, then Theorem 5.9 shows that there is a point t e (x, y) 
+such that 
+f(x) -f(y) f '(t) ----=-&lt;r. g(x) -g(y) g'(t) 
+Suppose (14) holds. Letting x-+ a in (18), we see that 
+f(y) &lt; &lt; g(y) -r q (a&lt; y &lt; c). </description></item><item><title>0 The Derivative of a Real Function</title><num_pages>5</num_pages><link>/app/basics/rudin/chap5/0_The_Derivative_of_a_Real_Function.pdf</link><description>DIFFERENTIATION 
 In this chapter we shall (except in the final section) confine our attention to real 
 functions defined on intervals or segments. This is not just a matter of con&#173;
 venience, since genuine differences appear when we pass from real functions to 
@@ -174,466 +445,158 @@ point x e [a, b]. Then/+ g, fg, and f/g are differentiable at x, and
 g . g2(x) 
 In (c), we assume of course that g(x) :I= 0. 
 Proof (a) is clear, by Theorem 4.4. Leth = fg. Then 
-h(t) -h(x) = f(t )[g(t) -g(x)] + g(x)[f(t) -f(x)]. </description></item><item><title>4 Derivatives of Higher Order</title><num_pages>1</num_pages><link>/app/basics/rudin/chap5/4_Derivatives_of_Higher_Order.pdf</link><description>100 PRINCIPLES OF MATHEMATICAL ANALYSIS 
-(see Exercise S for terminology). (Uniqueness follows from Exercise 4.) Hint: For 
-each p e X and each positive integer n, let Vn(p) be the set of all q e E with 
-d(p, q) &lt; l/n. Use Exercise 9 to show that the intersection of the closures of the 
-sets /(V1(p)), /(V2(p)), ... , consists of a single point, say g(p), of R1. Prove that 
-the function g so defined on X is the desired extension off. 
-Could the range space R1 be replaced by Rk? By any compact metric space? 
-By any complete metric space? By any metric space? 
-14. Let I = [O, 1] be the closed unit interval. Suppose/ is a continuous mapping of / 
-into I. Prove that /(x) = x for at least one x e J. 
-15. Call a mapping of X into Y open if/( V) is an open set in Y whenever Vis an open 
-set in X. 
-Prove that every continuous open mapping of R1 into R1 is monotonic. 
-16. Let [x] denote the largest integer contained in x, that is, [x] is the integer such 
-that x -l &lt; [x]:;;; x; and let (x) = x -[x] denote the fractional part of x. What 
-discontinuities do the functions [x] and (x) have? 
-17. Let/be a real function defined on (a, b). Prove that the set of points at which/ 
-has a simple discontinuity is at most countable. Hint: I ... et E be the set on which 
-f(x-) &lt;f(x+ ). With each point x of E, associate a triple (p, q, r) of rational 
-numbers such that 
-(a) f(x-) &lt; p &lt;f(x+ ), 
-(b) a&lt; q &lt; t &lt; x implies/(t) &lt;p, 
-(c) x &lt; t &lt; r &lt; b implies/(t) &gt; p. 
-The set of all such triples is countable. Show that each triple is associated with at 
-most one point of E. Deal similarly with the other possible types of simple dis-
-&#8226; &#8226; &#8226; cont1nu1t1es. 
-18. Every rational x can be written in the form x = m/n, where n &gt; 0, and m and n are 
-integers without any common divisors. When x = 0, we take n = l. Consider the 
-function f defined on R1 by 
-0 
-f(x) = 1 -n (x irrational), 
-m x=-. n 
-Prove that f is continuous at every irrational point, and that f l1as a simple discon&#173;
-tinuity at every rational point. 
-19. Suppose / is a real function with domain R1 which has the intermediate value 
-property: If /(a)&lt; c &lt;f(b), then/(x) = c for some x between a and b. 
-Suppose also, for every rational r, that the set of all x with/(x) = r is closed. 
-Prove that f is continuous. 
-Hint: If Xn &#10132; Xo but f(xn) &gt; r &gt; f(xo) for some r and all n, then f(tn) = r 
-for some In between Xo and x,.; thus tn &#10132; Xo. Find a contradiction. (N. J. Fine, 
-Amer. Math. Monthly, vol. 73, 1966, p. 782.) </description></item><item><title>7 Exercises</title><num_pages>1</num_pages><link>/app/basics/rudin/chap5/7_Exercises.pdf</link><description>104 PRINCIPLES OF MATHEMATICAL ANALYSIS 
-provided this limit exists in accordance with Definition 4.1. 
-We thus associate with the function f a function f' whose domain 
-is the set of points x at which the limit (2) exists; f' is called the derivative 
-off. 
-If f' is defined at a point x, we say that f is differentiable at x. If f' is 
-defined at every point of a set E c: [a, b], we say that/ is differentiable on E. 
-It is possible to consider right-hand and left-hand limits in (2); this leads 
-to the definition of right-hand and left-hand derivatives. In particular, at the 
-endpoints a and b, the derivative, if it exists, is a right-hand or left-hand deriva&#173;
-tive, respectively. We shall not, however, discuss one-sided derivatives in any 
-detail. 
-If f is defined on a segment (a, b) and if a&lt; x &lt; b, then f'(x) is defined 
-by (1) and (2), as above. Butf'(a) and/'(b) are not defined in this case. 
-5.2 Theorem Letf be defined on [a, b]. /ff is differentiable at a point x e [a, b], 
-then f is continuous at x. 
-Proof As t &#10132; x, we have, by Theorem 4.4, 
-f(t) -f(x) , f(t) -f (x) = --- &#8226; (t -x) &gt; f (x) &#183; 0 = 0. t-x 
-The converse of this theorem is not true. It is easy to construct continuous 
-functions which fail to be differentiable at isolated points. In Chap. 7 we shall 
-even become acquainted with a function which is continuous on the whole line 
-without being differentiable at any point! 
-5.3 Theorem Suppose f and g are defined on [a, b] and are differentiable at a 
-point x e [a, b]. Then/+ g, fg, and f/g are differentiable at x, and 
-(a) (f + g)'(x) = f'(x) + g'(x); 
-(b) (fg)'(x) = f'(x)g(x) + f(x)g'(x); 
-(c) f '(x) = g(x)f'(x) -g'(x)f(x). 
-g . g2(x) 
-In (c), we assume of course that g(x) :I= 0. 
-Proof (a) is clear, by Theorem 4.4. Leth = fg. Then 
-h(t) -h(x) = f(t )[g(t) -g(x)] + g(x)[f(t) -f(x)]. </description></item><item><title>3 L'Hopital's Rule</title><num_pages>2</num_pages><link>/app/basics/rudin/chap5/3_L'Hopital's_Rule.pdf</link><description>CONTINUITY 99 
-and let Ebe a dense subset of X. Prove that f(E) is dense in f(X). If g(p) = f(p) 
-for all p e E, prove that g(p) = f(p) for all p e X. (In other words, a continuous 
-mapping is determined by its values on a dense subset of its domain.) 
-5. If/ is a real continuous function defined on a closed set E c R1, prove that there 
-exist continuous real functions g on R1 such that g(x) = f(x) for all x e E. (Such 
-functions g are called continuous extensions off from E to R1 .) Show that the 
-result becomes false if the word ''closed'' is omitted. Extend the result to vector&#173;
-valued functions. Hint: Let the graph of g be a straight line on each of the seg&#173;
-ments which constitute the complement of E (compare Exercise 29, Chap. 2). 
-The result remains true if R1 is replaced by any metric space, but the proof is not 
-so simple. 
-6. If f is defined on E, the graph off is the set of points (x, /(x)), for x e E. In partic&#173;
-ular, if Eis a set of real numbers, and/'is real-valued, the graph of /is a subset of 
-the plane. 
-Suppose E is compact, and prove that / is continuous on E if and only if 
-its graph is compact. 
-7. If E c X and if f is a function defined on X, the restriction off to E is the function 
-g whose domain of definition is E, such that g(p) =f(p) for p e E. Define/and g 
-on R2 by: /(0, 0) = g(O, 0) = 0, j'(x, y) = xy2 /(x2 + y4), g(x, y) = xy2 /(x2 + y6) 
-if (x, y) i= (0, 0). Prove that / is bounded on R2, that g is unbounded in every 
-neighborhood of (0, 0), and that f is not continuous at (0, O); nevertheless, the 
-restrictions of both f and g to every straight line in R2 are continuous! 
-8. Let/' be a real uniformly continuous function on the bounded set E in R1&#8226; Prove 
-that f is bounded on E. 
-Show that the conclusion is false if boundedness of E is omitted from the 
-hypothesis. 
-9. Show that the requirement in the definition of uniform continuity can be rephrased 
-as follows, in terms of diameters of sets: To every e &gt; 0 there exists a 8 &gt; 0 such 
-that diam /(E) &lt; e for all E c X with diam E &lt; 8. 
-10. Complete the details of the following alternative proof of Theorem 4.19: If f is not 
-uniformly continuous, then for some e &gt; 0 there are sequences {pn}, {qn} in X such 
-that dx(Pn, qn) &#9658; 0 but dy(f(pn),f(qn)) &gt; e. Use Theorem 2.37 to obtain a contra&#173;
-diction. 
-11. Suppose f is a uniformly continuous mapping of a metric space X into a metric 
-space Y and prove that {/(xn)} is a Cauchy sequence in Y for every Cauchy se&#173;
-quence {xn} in X. Use this result to give an alternative proof of the theorem stated 
-in Exercise 13. 
-12. A uniformly continuous function of a uniformly continuous function is uniformly 
-&#8226; continuous. 
-State this more precisely and prove it. 
-13. Let E be a dense subset of a metric space X, and let/' be a uniformly continuous 
-real function defined on E. Prove that f has a continuous extension from E to X 100 PRINCIPLES OF MATHEMATICAL ANALYSIS 
-(see Exercise S for terminology). (Uniqueness follows from Exercise 4.) Hint: For 
-each p e X and each positive integer n, let Vn(p) be the set of all q e E with 
-d(p, q) &lt; l/n. Use Exercise 9 to show that the intersection of the closures of the 
-sets /(V1(p)), /(V2(p)), ... , consists of a single point, say g(p), of R1. Prove that 
-the function g so defined on X is the desired extension off. 
-Could the range space R1 be replaced by Rk? By any compact metric space? 
-By any complete metric space? By any metric space? 
-14. Let I = [O, 1] be the closed unit interval. Suppose/ is a continuous mapping of / 
-into I. Prove that /(x) = x for at least one x e J. 
-15. Call a mapping of X into Y open if/( V) is an open set in Y whenever Vis an open 
-set in X. 
-Prove that every continuous open mapping of R1 into R1 is monotonic. 
-16. Let [x] denote the largest integer contained in x, that is, [x] is the integer such 
-that x -l &lt; [x]:;;; x; and let (x) = x -[x] denote the fractional part of x. What 
-discontinuities do the functions [x] and (x) have? 
-17. Let/be a real function defined on (a, b). Prove that the set of points at which/ 
-has a simple discontinuity is at most countable. Hint: I ... et E be the set on which 
-f(x-) &lt;f(x+ ). With each point x of E, associate a triple (p, q, r) of rational 
-numbers such that 
-(a) f(x-) &lt; p &lt;f(x+ ), 
-(b) a&lt; q &lt; t &lt; x implies/(t) &lt;p, 
-(c) x &lt; t &lt; r &lt; b implies/(t) &gt; p. 
-The set of all such triples is countable. Show that each triple is associated with at 
-most one point of E. Deal similarly with the other possible types of simple dis-
-&#8226; &#8226; &#8226; cont1nu1t1es. 
-18. Every rational x can be written in the form x = m/n, where n &gt; 0, and m and n are 
-integers without any common divisors. When x = 0, we take n = l. Consider the 
-function f defined on R1 by 
-0 
-f(x) = 1 -n (x irrational), 
-m x=-. n 
-Prove that f is continuous at every irrational point, and that f l1as a simple discon&#173;
-tinuity at every rational point. 
-19. Suppose / is a real function with domain R1 which has the intermediate value 
-property: If /(a)&lt; c &lt;f(b), then/(x) = c for some x between a and b. 
-Suppose also, for every rational r, that the set of all x with/(x) = r is closed. 
-Prove that f is continuous. 
-Hint: If Xn &#10132; Xo but f(xn) &gt; r &gt; f(xo) for some r and all n, then f(tn) = r 
-for some In between Xo and x,.; thus tn &#10132; Xo. Find a contradiction. (N. J. Fine, 
-Amer. Math. Monthly, vol. 73, 1966, p. 782.) </description></item><item><title>2 The Continuity of Derivatives</title><num_pages>2</num_pages><link>/app/basics/rudin/chap5/2_The_Continuity_of_Derivatives.pdf</link><description>98 PRINCIPLES OF MATHEMATICAL ANALYSIS 
-4.32 Definition For any real c, the set of real numbers x such that x &gt; c is 
-called a neighborhood of+ oo and is written (c, + oo ). Similarly, the set ( -oo, c) 
-is a neighborhood of -oo. 
-4.33 Definition Let f be a real function defined on E c R. We say that 
-f(t) &#10132; A as t &#10132; x, 
-where A and x are in the extended real number system, if for every neighborhood 
-U of A there is a neighborhood V of x such that V n E is not empty, and such 
-that/(t) e U for all t e V n E, t &#165;= x. 
-A moment's consideration will show that this coincides with Definition 
-4.1 when A and x are real. 
-The analogue of Theorem 4.4 is still true, and the proof offers nothing 
-new. We state it, for the sake of completeness. 
-4.34 Theorem Let f and g be defined on E c R. Suppose 
-Then f(t) &#10132; A, 
-(a) f(t) ) A' implies A' = A. 
-(b) (f + g)(t) ) A + B, 
-(c) (fg)(t) ) AB, 
-(d) (f /g)(t) ) A/B, as t &#10132; x. 
-provided the right members of (b), (c), and (d) are defined. 
-Note that oo -oo, 0 &#183; oo, 00/00, A/0 are not defined (see Definition 1.23). 
-EXERCISES 
-1. Suppose/ is a real function defined on R1 which satisfies 
-lim [/(x + h)-f(x- h)] =0 
-for every x e R1&#8226; Does this imply that f is continuous? 
-2. If/ is a continuous mapping of a metric space X into a metric space Y, prove that 
-/(E) cf(E) 
-for every set E c X. (E denotes the closure of E.) Show, by an example, that 
-/(E) can be a proper subset of f(E). 
-3. Let /be a continuous real function on a metric space X. Let Z (/) (the zero set of/) 
-be the set of all p e X at which /(p) = 0. Prove that Z(/) is closed. 
-4. Let / and g be continuous mappings of a metric space X into a metric space Y, CONTINUITY 99 
-and let Ebe a dense subset of X. Prove that f(E) is dense in f(X). If g(p) = f(p) 
-for all p e E, prove that g(p) = f(p) for all p e X. (In other words, a continuous 
-mapping is determined by its values on a dense subset of its domain.) 
-5. If/ is a real continuous function defined on a closed set E c R1, prove that there 
-exist continuous real functions g on R1 such that g(x) = f(x) for all x e E. (Such 
-functions g are called continuous extensions off from E to R1 .) Show that the 
-result becomes false if the word ''closed'' is omitted. Extend the result to vector&#173;
-valued functions. Hint: Let the graph of g be a straight line on each of the seg&#173;
-ments which constitute the complement of E (compare Exercise 29, Chap. 2). 
-The result remains true if R1 is replaced by any metric space, but the proof is not 
-so simple. 
-6. If f is defined on E, the graph off is the set of points (x, /(x)), for x e E. In partic&#173;
-ular, if Eis a set of real numbers, and/'is real-valued, the graph of /is a subset of 
-the plane. 
-Suppose E is compact, and prove that / is continuous on E if and only if 
-its graph is compact. 
-7. If E c X and if f is a function defined on X, the restriction off to E is the function 
-g whose domain of definition is E, such that g(p) =f(p) for p e E. Define/and g 
-on R2 by: /(0, 0) = g(O, 0) = 0, j'(x, y) = xy2 /(x2 + y4), g(x, y) = xy2 /(x2 + y6) 
-if (x, y) i= (0, 0). Prove that / is bounded on R2, that g is unbounded in every 
-neighborhood of (0, 0), and that f is not continuous at (0, O); nevertheless, the 
-restrictions of both f and g to every straight line in R2 are continuous! 
-8. Let/' be a real uniformly continuous function on the bounded set E in R1&#8226; Prove 
-that f is bounded on E. 
-Show that the conclusion is false if boundedness of E is omitted from the 
-hypothesis. 
-9. Show that the requirement in the definition of uniform continuity can be rephrased 
-as follows, in terms of diameters of sets: To every e &gt; 0 there exists a 8 &gt; 0 such 
-that diam /(E) &lt; e for all E c X with diam E &lt; 8. 
-10. Complete the details of the following alternative proof of Theorem 4.19: If f is not 
-uniformly continuous, then for some e &gt; 0 there are sequences {pn}, {qn} in X such 
-that dx(Pn, qn) &#9658; 0 but dy(f(pn),f(qn)) &gt; e. Use Theorem 2.37 to obtain a contra&#173;
-diction. 
-11. Suppose f is a uniformly continuous mapping of a metric space X into a metric 
-space Y and prove that {/(xn)} is a Cauchy sequence in Y for every Cauchy se&#173;
-quence {xn} in X. Use this result to give an alternative proof of the theorem stated 
-in Exercise 13. 
-12. A uniformly continuous function of a uniformly continuous function is uniformly 
-&#8226; continuous. 
-State this more precisely and prove it. 
-13. Let E be a dense subset of a metric space X, and let/' be a uniformly continuous 
-real function defined on E. Prove that f has a continuous extension from E to X </description></item><item><title>0 The Derivative of a Real Function</title><num_pages>5</num_pages><link>/app/basics/rudin/chap5/0_The_Derivative_of_a_Real_Function.pdf</link><description>CONTINUITY 93 
-4.21 Example Let X be the half-open interval [O, 2n) on the real line, and 
-let f be the mapping of X onto the circle Y consisting of all points whose distance 
-from the origin is 1, given by 
-(24) f(t) = (cost, sin t) (0 ~ t &lt; 2n). 
-The continuity of the trigonometric functions cosine and sine, as well as their 
-periodicity properties, will be established in Chap. 8. These results show that 
-f is a continuous 1-1 mapping of X onto Y. 
-However, the inverse mapping (which exists, since f is one-to-one and 
-onto) fails to be continuous at the point (1, 0) = f(O). Of course, X is not com&#173;
-pact in this example. (It may be of interest to observe that r-1 fails to be 
-continuous in spite of the fact that Y is compact!) 
-CONTINUITY AND CONNECTEDNESS 
-4.22 Theorem If f is a continuous mapping of a metric space X into a metric 
-space Y, and if E is a connected subset of X, then f(E) is connected. 
-Proof Assume, on the contrary, that/(&#163;)= Au B, where A and Bare 
-nonempty separated subsets of Y. Put G =En f-1(A), H =En f-1(B). 
-Then E =Gu H, and neither G nor His empty. 
-Since Ac A (the closure of A), we have G c/-1(.A); the latter set is 
-closed, since/is continuous; hence G c/-1(.A). It follows that/(G) c .A. 
-Since f(H) =Band An Bis empty, we conclude that G n His empty. 
-The same argument shows that G n His empty. Thus G and Hare 
-separated. This is impossible if E is connected. 
-4.23 Theorem Let f be a continuous real function on the interval [a, b ]. If 
-f(a) &lt;f(b) and if c is a number such that f(a) &lt; c &lt;f(b), then there exists a 
-point x e (a, b) such that f(x) = c. 
-A similar result holds, of course, if /(a) &gt; f(b). Roughly speaking, the 
-theorem says that a continuous real function assumes all intermediate values on 
-an interval. 
-Proof By Theorem 2.47, [a, b] is connected; hence Theorem 4.22 shows 
-that f([a, b ]) is a connected subset of R1, and the assertion follows if we 
-appeal once more to Theorem 2.47. 
-4.24 Remark At first glance, it might seem that Theorem 4.23 has a converse. 
-That is, one might think that if for any two points x1 &lt; x2 and for any number c 
-between/(x 1) and/(x 2) there is a point x in (x1, x2) such that/(x) = c, then/ 
-must be continuous. 
-That this is not so may be concluded from Example 4.27(d). 94 PRINCIPLES OF MATHEMATICAL ANALYSIS 
-DISCONTINUITIES 
-If x is a point in the domain of definition of the function f at which f is not 
-continuous, we say that/is discontinuous at x, or that/ has a discontinuity at x. 
-If f is defined on an interval or on a segment, it is customary to divide discon&#173;
-tinuities into two types. Before giving this classification, we have to define the 
-right-hand and the left-hand limits offatx, which we denote by/(x+) and/(x-), 
-respectively. 
-4.25 Definition Let/ be defined on (a, b). Consider any point x such that 
-a ~ x &lt; b. We write 
-f(x+) =q 
-if f(tn) ) q as n ) oo, for all sequences {tn} in (x, b) such that tn ) x. To obtain 
-the definition off (x -), for a &lt; x ~ b, we restrict ourselves to sequences { tn} in 
-(a, x). 
-It is clear that any point x of (a, b), limf(t) exists if and only if 
-t&#10132;x 
-f(x+) = f(x-) = lim/(t). 
-t&#10132;x 
-4.26 Definition Let f be defined on (a, b). If f is discontinuous at a point x, 
-and if f(x +) and f (x-) exist, then./ is said to have a discontinuity of the first 
-kind, or a simple discontinuity, at x. Otherwise the discontinuity is said to be of 
-the second kind. 
-There are two ways in which a function can have a simple discontinuity: 
-either f(x+) =/:, f(x-) [in which case the value /(x) is immaterial], or f(x +) = 
-f (x - ) =/:-f(x). 
-4.27 Examples 
-(a) Define 
-l f(x) = 0 (x rational), 
-(x irrational). 
-Then/has a discontinuity of the second kind at every point x. since 
-neither f (x +) nor/ (x-) exists. 
-(b) Define 
-/(x) = X 0 (x rational), 
-(x irrational). CONTINUITY 9S 
-Then f is continuous at x = 0 and has a discontinuity of the second 
-kind at every other point. 
-(c) Define 
-X + 2 ( -3 &lt; X &lt; -2), 
-f(x) = -x -2 (-2 ~ X &lt; 0), 
-X + 2 (0 ~ X &lt; 1). 
-Then f has a simple discontinuity at x = 0 and is continuous at 
-every other point of ( -3, 1 ). 
-(d) Define 
-. l s1n-f(x) = X (x &#165;= 0), 
+h(t) -h(x) = f(t )[g(t) -g(x)] + g(x)[f(t) -f(x)]. DIFFERENTIATION 105 
+If we divide this by t -x and note that f(t) &gt; f(x) as t &gt; x (Theorem 5.2), 
+(b) follows. Next, let h = f/g. Then 
+h(t) -h(x) = 1 g(x)f(t) -f(x) _ f(x) g(t) -g(x) . 
+t -X g(t )g(x) t -X t -X 
+Letting t &gt; x, and applying Theorems 4.4 and 5.2, we obtain (c). 
+5.4 Examples The derivative of any constant is clearly zero. If/ is defined 
+by f(x) = x, thenf'(x) = 1. Repeated application of (b) and (c) then shows that 
+x11 is differentiable, and that its derivative is nx11
+-1, for any integer n (if n &lt; 0, 
+we have to restrict ourselves to x :I= 0). Thus every polynomial is differentiable, 
+and so is every rational function, except at the points where the denominator is 
+zero. 
+The following theorem is known as the ''chain rule'' for differentiation. 
+It deals with differentiation of composite functions and is probably the most 
+important theorem about derivatives. We shall meet more general versions of it 
+in Chap. 9. 
+5.5 Theorem Suppose f is continuous on [a, b],f'(x) exists at some point 
+x E [a, b ], g is defined on an interval I tt-&#183;hich contains the range off, and g is 
+differentiable at the point f (x). If' 
+h(t) = g(f(t)) (a~ t ~ b), 
+then h is differentiable at x, and 
+(3) h'(x) = g'(f(x))f'(x). 
+Proof Let y = f (x). By the definition of the derivative, we have 
+( 4) f(t) -f(x) = (t -x)[f'(x) + u(t )], 
+(5) 
+(6) g(s) -g(y) = (s -y)[g'(y) + v(s)], 
+where t e [a, b], s e /, and u(t) &#10132; 0 as t &#10132; x, v(s) &gt; 0 ass &gt; y. Lets =f(t). 
+Using first (5) and then ( 4), we obtain 
+h(t) -h(x) = g(f(t )) -g(f (x)) 
+= [f(t) -f(x)] &#183; [g'(y) + v(s)] 
+= (t -x) &#183; [f'(x) + u(t )] &#183; [g'(y) + v(s)], 
+or, if t :I= x, 
+h(t) -h(x) = [g'(y) + v(s)] &#183; [f'(x) + u(t)]. t-x 
+Letting t &gt; x, we see that s &gt; y, by the continuity&#183; off, so that the right 
+side of (6) tends to g'(y)f'(x), which gives (3). 106 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+5.6 Examples 
+(7) 
+(8) 
+(9) 
+(10) 
+(11) (a) Let/ be defined by 
+. 1 
+X Slll-f(x) = X (x :I= 0), 
 0 (x = 0). 
-Since neither f (0 +) nor f (0-) exists, f has a discontinuity of the 
-second kind at x = 0. We have not yet shown that sin xis a continuous 
-function. If we assume this result for the moment, Theorem 4. 7 implies 
-that f is continuous at every point x &#165;= 0. 
-MONOTONIC FUNCTIONS 
-We shall now study those functions which never decrease (or never increase) on 
-a given segment. 
-4.28 Definition Let f be real on (a, b). Then f is said to be monotonically 
-increasing on (a, b) if a&lt; x &lt; y &lt; b implies f(x) ~f(y). If the last inequality 
-is reversed, we obtain the definition of a monotonically decreasing function. The 
-class of monotonic functions consists of both the increasing and the decreasing 
-functions. 
-4.29 Theorem Let f be monotonically increasing on (a, b). Then f(x+) and 
-f(x-) exist at every point of x of (a, b). More precisely, 
-(25) 
-(26) sup f(t) =f(x-) ~f(x) ~f(x+) = inf f(t). 
-a&lt;t&lt;x x&lt;t&lt;b 
-F1,rthermore, if a &lt; x &lt; y &lt; b, then 
-f(x+) ~f(y-). 
-Analogous results evidently hold for monotonically decreasing functions. 96 PRINCIPLES OF MATHEMATICAL ANALYSIS 
-(27) 
-(28) 
-(29) 
-(30) Proof By hypothesis, the set ofnumbersf(t), where a&lt; t &lt; x, is bounded 
-above by the number f (x), and therefore has a least upper bound which 
-we shall denote by A. Evidently A 5:.f(x). We have to show that 
-A =f(x-). 
-Let e &gt; 0 be given. It follows from the definition of A as a least 
-upper bound that there exists b &gt; 0 such that a &lt; x -b &lt; x and 
-A -e &lt;f(x -b) 5:. A. 
-Since f is monotonic, we have 
-f (x -b) 5:. f (t) 5:. A (x -b &lt; t &lt; x). 
-Combining (27) and (28), we see that 
-lf(t) -A I &lt; e (x -b &lt; t &lt; x). 
-Hencef(x-) = A. -
-The second half of (25) is proved in precisely the same way. 
-Next, if a &lt; x &lt; y &lt; b, we see from (25) that .. 
-f(x+) = inf f(t) = inf f(t). 
-x&lt;t&lt;b x&lt;t&lt;y 
-The last equality is obtained by applying (25) to (a, y) in place of (a, b). 
-Similarly, 
-f(y-) = sup f(t) = sup f(t ). 
-a&lt;t&lt;y x&lt;t&lt;y 
-Comparison of (29) and (30) gives (26). 
-Corollary Monotonic functions have no discontinuities of the second kind. 
-This corollary implies that every monotonic function is discontinuous at 
-a countable set of points at most. Instead of appealing to the general theorem 
-whose proof is sketched in Exercise 17, we give here a simple proof which is 
-applicable to monotonic functions. 
-4.30 Theorem Let f be monotonic on (a, b). Then the set of points of (a, b) at 
-which f is discontinuous is at most countable. 
-Proof Suppose, for the sake of definiteness, that f is increasing, and 
-let E be the set of points at which f is discontinuous. 
-With every point x of E we associate a rational number r(x) such 
-that 
-f(x-) &lt; r(x) &lt;fix+). CONTINUITY 97 
-Since x1 &lt; x2 implies f(x1 +) ~f(x2 -), we see that r(x1) &#165;= r(x2) if 
-X1 :/: X2. 
-We have thus established a 1-1 correspondence between the set E and 
-a subset of the set of rational numbers. The latter, as we know, is count&#173;
-able. 
-4.31 Remark It should be noted that the discontinuities of a monotonic 
-function need not be isolated. In fact, given any countable subset E of (a, b), 
-which may even be dense, we can construct a function f, monotonic on (a, b), 
-discontinuous at every point of E, and at no other point of (a, b). 
-To show this, let the points of E be arranged in a sequence {xn}, 
-n = I, 2, 3,.... Let {en} be a sequence of positive numbers such that I:cn 
-converges. Define 
-(31) f(x) = L Cn (a&lt; x &lt; b). 
-Xn&lt;x 
-The summation is to be understood as follows: Sum over those indices n 
-for which Xn &lt; x. If there are no points Xn to the left of x, the sum is empty; 
-following the usual convention, we define it to be zero. Since (31) converges 
-absolutely, the order in which the terms are arranged is immaterial. 
-We leave the verification of the following properties off to the reader: 
-(a) f is monotonically increasing on (a, b); 
-(b) f is discontinuous at every point of E; in fact, 
-f(xn+) -f(xn-) =en&#8226; 
-(c) f is continuous at every other point of (a, b). 
-Moreover, it is not hard to see thatf{x-) =f(x) at all points of(a, b). If 
-a function satisfies this condition, we say that f is continuous from the left. If 
-the summation in (31) were taken over all indices n for which xn ~ x, we would 
-havef(x+) = f(x) at every point of (a, b); that is, f would be continuous from 
-the right. 
-Functions of this sort can also be defined by another method; for an 
-example we ref er to Theorem 6.16. 
-INFINITE LIMITS AND LIMITS AT INFINITY 
-To enable us to operate in the extended real number system, we shall now 
-enlarge the scope of Definition 4.1, by reformulating i&#183;t in terms of neighborhoods. 
-For any real number x, we have already defined a neighborhood of x to 
-be any segment (x -b, x + &lt;5). </description></item><item><title>1 Mean Value Theorems</title><num_pages>2</num_pages><link>/app/basics/rudin/chap5/1_Mean_Value_Theorems.pdf</link><description>CONTINUITY 97 
-Since x1 &lt; x2 implies f(x1 +) ~f(x2 -), we see that r(x1) &#165;= r(x2) if 
-X1 :/: X2. 
-We have thus established a 1-1 correspondence between the set E and 
-a subset of the set of rational numbers. The latter, as we know, is count&#173;
-able. 
-4.31 Remark It should be noted that the discontinuities of a monotonic 
-function need not be isolated. In fact, given any countable subset E of (a, b), 
-which may even be dense, we can construct a function f, monotonic on (a, b), 
-discontinuous at every point of E, and at no other point of (a, b). 
-To show this, let the points of E be arranged in a sequence {xn}, 
-n = I, 2, 3,.... Let {en} be a sequence of positive numbers such that I:cn 
-converges. Define 
-(31) f(x) = L Cn (a&lt; x &lt; b). 
-Xn&lt;x 
-The summation is to be understood as follows: Sum over those indices n 
-for which Xn &lt; x. If there are no points Xn to the left of x, the sum is empty; 
-following the usual convention, we define it to be zero. Since (31) converges 
-absolutely, the order in which the terms are arranged is immaterial. 
-We leave the verification of the following properties off to the reader: 
-(a) f is monotonically increasing on (a, b); 
-(b) f is discontinuous at every point of E; in fact, 
-f(xn+) -f(xn-) =en&#8226; 
-(c) f is continuous at every other point of (a, b). 
-Moreover, it is not hard to see thatf{x-) =f(x) at all points of(a, b). If 
-a function satisfies this condition, we say that f is continuous from the left. If 
-the summation in (31) were taken over all indices n for which xn ~ x, we would 
-havef(x+) = f(x) at every point of (a, b); that is, f would be continuous from 
-the right. 
-Functions of this sort can also be defined by another method; for an 
-example we ref er to Theorem 6.16. 
-INFINITE LIMITS AND LIMITS AT INFINITY 
-To enable us to operate in the extended real number system, we shall now 
-enlarge the scope of Definition 4.1, by reformulating i&#183;t in terms of neighborhoods. 
-For any real number x, we have already defined a neighborhood of x to 
-be any segment (x -b, x + &lt;5). 98 PRINCIPLES OF MATHEMATICAL ANALYSIS 
-4.32 Definition For any real c, the set of real numbers x such that x &gt; c is 
-called a neighborhood of+ oo and is written (c, + oo ). Similarly, the set ( -oo, c) 
-is a neighborhood of -oo. 
-4.33 Definition Let f be a real function defined on E c R. We say that 
-f(t) &#10132; A as t &#10132; x, 
-where A and x are in the extended real number system, if for every neighborhood 
-U of A there is a neighborhood V of x such that V n E is not empty, and such 
-that/(t) e U for all t e V n E, t &#165;= x. 
-A moment's consideration will show that this coincides with Definition 
-4.1 when A and x are real. 
-The analogue of Theorem 4.4 is still true, and the proof offers nothing 
-new. We state it, for the sake of completeness. 
-4.34 Theorem Let f and g be defined on E c R. Suppose 
-Then f(t) &#10132; A, 
-(a) f(t) ) A' implies A' = A. 
-(b) (f + g)(t) ) A + B, 
-(c) (fg)(t) ) AB, 
-(d) (f /g)(t) ) A/B, as t &#10132; x. 
-provided the right members of (b), (c), and (d) are defined. 
-Note that oo -oo, 0 &#183; oo, 00/00, A/0 are not defined (see Definition 1.23). 
-EXERCISES 
-1. Suppose/ is a real function defined on R1 which satisfies 
-lim [/(x + h)-f(x- h)] =0 
-for every x e R1&#8226; Does this imply that f is continuous? 
-2. If/ is a continuous mapping of a metric space X into a metric space Y, prove that 
-/(E) cf(E) 
-for every set E c X. (E denotes the closure of E.) Show, by an example, that 
-/(E) can be a proper subset of f(E). 
-3. Let /be a continuous real function on a metric space X. Let Z (/) (the zero set of/) 
-be the set of all p e X at which /(p) = 0. Prove that Z(/) is closed. 
-4. Let / and g be continuous mappings of a metric space X into a metric space Y, </description></item></channel></rss>
+Taking for granted that the derivative of sin x is cos x (we shall 
+discuss the trigonometric functions in Chap. 8), we can apply Theorems 
+5.3 and 5.5 whenever x -::/:, 0, and obtain 
+'( ) . 1 1 1 f X = SID - --COS -
+X X X (x -::/:-0). 
+At x = 0, these theorems do not apply any longer, since 1/x is not defined 
+there, and we appeal directly to the definition: for t :I= 0, 
+f(t) -f(O) . 1 ----= sin - . t-0 t 
+As t &gt; 0, this does not tend to any limit, so that f'(O) does not exist. 
+( b) Let f be defined by 
+2 &#8226; 1 X Slll-f(x) = X (x :I= 0), 
+0 (x = 0), 
+As above, we obtain 
+f'(x) = 2x sin_!_ -cos_!_ 
+X X (x :I= 0). 
+At x = 0, we appeal to the definition, and obtain 
+f(t) -t(o) . 1 I I 1---- = t SID -~ t t-0 t (t :I= O); 
+letting t &gt; 0, we see that 
+f'(O) = 0. 
+Thus f is differentiable at all points x, but f' is not a continuous 
+function, since cos (1/x) in (10) does not tend to a limit as x &gt; 0. DIFFERENTIATION 107 
+MEAN VALUE THEOREMS 
+5.7 Definition Let/ be a real function defined on a metric space X. We say 
+that/has a local maximum at a point p e X if there exists~ &gt; 0 such thatf(q) ~ 
+f(p) for all q e X with d(p, q) &lt; ~-
+Local minima are defined likewise. 
+Our next theorem is the basis of many applications of differentiation. 
+5.8 Theorem Let f be defined on [a, b]; if f has a local maximum at a point 
+x e (a, b), and if f'(x) exists, thenj''(x) = 0. 
+The analogous statement for local minima is of course also true. 
+Proof Choose~ in accordance with Definition 5.7, so that 
+a &lt; x -~ &lt; x &lt; x + ~ &lt; b. 
+If x -~ &lt; t &lt; x, then 
+f_(t_)_-_f(_x) ~ O. 
+t-x 
+Letting t &gt; x, we see thatf'(x) ~ 0. 
+If x &lt; t &lt; x + ~, then 
+f(t) -f(x) 0 ----~' t-x 
+which shows that f '(x) ~ 0. Hence f'(x) = 0. 
+5.9 Theorem If f and g are continuous real functions on [a, b] which are 
+differentiable in (a, b), then there is a point x e (a, b) at a&#183;hich 
+(12) [f(b) -f(a)]g'(x) = [g(b) -g(a)]f'(x). 
+Note that differentiability is not required at the endpoints. 
+Proof Put 
+h(t) = [f(b) -f(a)]g(t) -[g(b) -g(a)]f(t) (a~ t ~ b). 
+Then h is continuous on [a, b], h is differentiable in (a, b), and 
+h(a) = f(b)g(a) -f(a)g(b) = h(b). 
+To prove the theorem, we have to show that h'(x) = 0 for some x e (a, b). 
+If h is constant, this holds for every x e (a, b). If h(t) &gt; h(a) for 
+some t e (a, b), let x be a point on [a, b] at which h attains its maximum </description></item><item><title>1 Mean Value Theorems</title><num_pages>2</num_pages><link>/app/basics/rudin/chap5/1_Mean_Value_Theorems.pdf</link><description>DIFFERENTIATION 107 
+MEAN VALUE THEOREMS 
+5.7 Definition Let/ be a real function defined on a metric space X. We say 
+that/has a local maximum at a point p e X if there exists~ &gt; 0 such thatf(q) ~ 
+f(p) for all q e X with d(p, q) &lt; ~-
+Local minima are defined likewise. 
+Our next theorem is the basis of many applications of differentiation. 
+5.8 Theorem Let f be defined on [a, b]; if f has a local maximum at a point 
+x e (a, b), and if f'(x) exists, thenj''(x) = 0. 
+The analogous statement for local minima is of course also true. 
+Proof Choose~ in accordance with Definition 5.7, so that 
+a &lt; x -~ &lt; x &lt; x + ~ &lt; b. 
+If x -~ &lt; t &lt; x, then 
+f_(t_)_-_f(_x) ~ O. 
+t-x 
+Letting t &gt; x, we see thatf'(x) ~ 0. 
+If x &lt; t &lt; x + ~, then 
+f(t) -f(x) 0 ----~' t-x 
+which shows that f '(x) ~ 0. Hence f'(x) = 0. 
+5.9 Theorem If f and g are continuous real functions on [a, b] which are 
+differentiable in (a, b), then there is a point x e (a, b) at a&#183;hich 
+(12) [f(b) -f(a)]g'(x) = [g(b) -g(a)]f'(x). 
+Note that differentiability is not required at the endpoints. 
+Proof Put 
+h(t) = [f(b) -f(a)]g(t) -[g(b) -g(a)]f(t) (a~ t ~ b). 
+Then h is continuous on [a, b], h is differentiable in (a, b), and 
+h(a) = f(b)g(a) -f(a)g(b) = h(b). 
+To prove the theorem, we have to show that h'(x) = 0 for some x e (a, b). 
+If h is constant, this holds for every x e (a, b). If h(t) &gt; h(a) for 
+some t e (a, b), let x be a point on [a, b] at which h attains its maximum 108 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+(Theorem 4.16). By (12), x e (a, b), and Theorem 5.8 shows that h'(x) = 0. 
+If h(t) &lt; h(a) for some t e (a, b), the same argument applies if we choose 
+for x a point on [a, b] where h attains its minimum. 
+This theorem is often called a generalized mean value theorem; the following 
+special case is usually referred to as ''the'' mean value theorem: 
+5.10 Theorem If f is a real continuous function on [a, b] which is differentiable 
+in (a, b), then there is a point x e (a, b) at which 
+f(b) -f(a) = (b -a)f'(x). 
+Proof Take g(x) = x in Theorem 5.9. 
+5.11 Theorem Suppose f is dijj'erentiable in (a, b). 
+(a) Jff'(x) ~ Ofor all x e (a, b), then/ is monotonically increasing. 
+(b) Jff'(x) = Ofor all x e (a, b), then/ is constant. 
+(c) If f'(x) ~ 0 for all x e (a, b), then f is monotonically decreasing. 
+Proof All conclusions can be read off from the equation 
+f(x2) -f(x1) = (x2 -X1)f'(x), 
+which is valid, for each pair of numbers x1, x2 in (a, b), for some x between 
+x1 and x2&#8226; 
+THE CONTINUITY OF DERir.ATIVES 
+We have already seen [Example 5.6(b)] that a function/may have a derivative 
+f' which exists at every point, but is discontinuous at some point. However, not 
+every function is a derivative. In particular, derivatives which exist at every 
+point of an interval have one important property in common with functions 
+which are continuous on an interval: Intermediate values are assumed ( compare 
+Theorem 4.23). The precise statement follows. 
+5.12 Theorem Suppose f is a real differentiable function on [a, b] and suppose 
+f'(a) &lt; l &lt;f'(b). Then there is a point x e (a, b) such that f'(x) = l. 
+A similar result holds of course if f'(a) &gt; f'(b). 
+Proof Put g(t) = f(t) -lt. Then g'(a) &lt; 0, so that g(t1) &lt; g(a) for some 
+t1 e (a, b), and g'(b) &gt; 0, so that g(t2) &lt; g(b) for some t2 e (a, b). Hence 
+g attains its minimum on [a, b] (Theorem 4.16) at some point x such that 
+a &lt; x &lt; b. By Theorem 5.8, g'(x) = 0. Hence f'(x) = l. </description></item></channel>
