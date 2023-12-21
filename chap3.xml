@@ -1,4 +1,4 @@
-<channel><item><title>13 Rearrangements</title><num_pages>4</num_pages><link>/app/basics/rudin/chap3/13_Rearrangements.pdf</link><description>72 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+<rss version="2.0"><channel><item><title>13 Rearrangements</title><num_pages>4</num_pages><link>/app/basics/rudin/chap3/13_Rearrangements.pdf</link><description>72 PRINCIPLES OF MATHEMATICAL ANALYSIS 
 Proof The assertion follows from the inequality 
 m m L ak ~ L I akl, 
 k=n k&#8226;n 
@@ -1523,4 +1523,4 @@ n
 7. Prove that the convergence of :l:an implies the convergence of 
 van 
 :E n , 
-if On::?: 0. </description></item></channel>
+if On::?: 0. </description></item></channel></rss>

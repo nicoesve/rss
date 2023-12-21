@@ -1,4 +1,4 @@
-<channel><item><title>5 Taylor's Theorem</title><num_pages>2</num_pages><link>/app/basics/rudin/chap5/5_Taylor's_Theorem.pdf</link><description>110 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+<rss version="2.0"><channel><item><title>5 Taylor's Theorem</title><num_pages>2</num_pages><link>/app/basics/rudin/chap5/5_Taylor's_Theorem.pdf</link><description>110 PRINCIPLES OF MATHEMATICAL ANALYSIS 
 (20) 
 (21) 
 (22) Next, suppose (15) holds. Keeping y fixed in (18), we can choose 
@@ -598,5 +598,4 @@ f'(a) &lt; l &lt;f'(b). Then there is a point x e (a, b) such that f'(x) = l.
 A similar result holds of course if f'(a) &gt; f'(b). 
 Proof Put g(t) = f(t) -lt. Then g'(a) &lt; 0, so that g(t1) &lt; g(a) for some 
 t1 e (a, b), and g'(b) &gt; 0, so that g(t2) &lt; g(b) for some t2 e (a, b). Hence 
-g attains its minimum on [a, b] (Theorem 4.16) at some point x such that 
-a &lt; x &lt; b. By Theorem 5.8, g'(x) = 0. Hence f'(x) = l. </description></item></channel>
+g attains its minimum on [a, b] (Theorem 4.16) at some point x such that a &lt; x &lt; b. By Theorem 5.8, g'(x) = 0. Hence f'(x) = l. </description></item></channel></rss>

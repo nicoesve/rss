@@ -1,4 +1,4 @@
-<channel><item><title>2 Integration and Differentiation</title><num_pages>6</num_pages><link>/app/basics/rudin/chap6/2_Integration_and_Differentiation.pdf</link><description>118 PRINCIPLES OF MATHEMATICAL ANALYSIS 
+<rss version="2.0"><channel><item><title>2 Integration and Differentiation</title><num_pages>6</num_pages><link>/app/basics/rudin/chap6/2_Integration_and_Differentiation.pdf</link><description>118 PRINCIPLES OF MATHEMATICAL ANALYSIS 
 24. The process described in part (c) of Exercise 22 can of course also be applied to 
 functions that map (O, oo) to (0, oo ). 
 Fix some oc &gt; 1, and put 
@@ -822,4 +822,4 @@ Proof If f = fi + f2 and P is any partition of [a, b ], we have
 ~ U(P,f, oc) S U(P,fi, oc) + U(P,f2, oc). 
 If f1 e af(oc) and f2 e af(oc), let e &gt; 0 be given. There are partitions P1 
 (j = 1, 2) such that 
-U(P1,Jj, oc) -L(P1,Jj, oc) &lt; e. </description></item></channel>
+	U(P1,Jj, oc) -L(P1,Jj, oc) &lt; e. </description></item></channel></rss>

@@ -1,4 +1,4 @@
-<channel><item><title>6 Infinite Limits and Limits at Infinity</title><num_pages>3</num_pages><link>/app/basics/rudin/chap4/6_Infinite_Limits_and_Limits_at_Infinity.pdf</link><description>CONTINUITY 9S 
+<rss version="2.0"><channel><item><title>6 Infinite Limits and Limits at Infinity</title><num_pages>3</num_pages><link>/app/basics/rudin/chap4/6_Infinite_Limits_and_Limits_at_Infinity.pdf</link><description>CONTINUITY 9S 
 Then f is continuous at x = 0 and has a discontinuity of the second 
 kind at every other point. 
 (c) Define 
@@ -733,4 +733,5 @@ appeal once more to Theorem 2.47.
 That is, one might think that if for any two points x1 &lt; x2 and for any number c 
 between/(x 1) and/(x 2) there is a point x in (x1, x2) such that/(x) = c, then/ 
 must be continuous. 
-That this is not so may be concluded from Example 4.27(d). </description></item></channel>
+That this is not so may be concluded from Example 4.27(d). </description></item></channel></rss>
+
